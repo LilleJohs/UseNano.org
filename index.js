@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/db', async (req, res) => {
   try {
-    var doc = yaml.safeLoad(fs.readFileSync("https://limitless-spire-35121.herokuapp.com/merchants.yml", 'utf8'));
+    var doc = yaml.safeLoad(fs.readFileSync("public/merchants.yml", 'utf8'));
     var search = req.query.search.toLowerCase();
     if (search !== "undefined") {
       newList = [];
