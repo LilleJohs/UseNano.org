@@ -1,5 +1,4 @@
 const express = require('express');
-const keys = require('./config/keys');
 const cors = require('cors');
 const yaml = require('js-yaml');
 const fs = require('fs');
