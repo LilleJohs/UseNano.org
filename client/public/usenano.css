@@ -9,7 +9,7 @@ body { padding-top: 90px; }
   height: 50px;
   width: 270px;
 }
-ul{
+ul {
 list-style-type:none;
 }
 .navbar-left {
@@ -20,9 +20,11 @@ list-style-type:none;
 }
 .merchant {
   width: 60%;
+  cursor: pointer;
 }
 .category {
   width: 20%;
+  cursor: pointer;
 }
 tr img {
     width: 8%;
