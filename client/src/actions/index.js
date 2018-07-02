@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'http://localhost:5000/db?search=';
+const baseURL = location.protocol + '//' + location.host + '/db?search=';
 
 export const doSearch = (searchString) => async dispatch => {
   const url = baseURL + searchString + "&page=1";
