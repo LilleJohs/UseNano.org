@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = location.protocol + '//' + location.host + '/db?search=';
+const baseURL = 'https://limitless-spire-35121.herokuapp.com/db?search=';
 
 export const doSearch = (searchString) => async dispatch => {
   const url = baseURL + searchString + "&page=1";
