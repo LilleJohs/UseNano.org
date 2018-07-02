@@ -3,9 +3,11 @@ const cors = require('cors');
 const yaml = require('js-yaml');
 const fs = require('fs');
 const path = require('path');
+const helmet = require('helmet');
 
 const app = express();
 app.use(cors());
+app.use(helmet());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/db', async (req, res) => {
