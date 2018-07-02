@@ -7,11 +7,11 @@ const path = require('path');
 
 const app = express();
 app.use(cors());
-app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/db', async (req, res) => {
   try {
-    var doc = yaml.safeLoad(fs.readFileSync(keys.path, 'utf8'));
+    var doc = yaml.safeLoad(fs.readFileSync("./merchants.yml", 'utf8'));
     var search = req.query.search.toLowerCase();
     if (search !== "undefined") {
       newList = [];
