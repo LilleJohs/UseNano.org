@@ -5,7 +5,7 @@ body { padding-top: 90px; }
 .navbar .navbar-brand {
   padding-top: 0px;
 }
-.navbar .navbar-brand img {
+.navbar img {
   height: 50px;
   width: 270px;
 }
