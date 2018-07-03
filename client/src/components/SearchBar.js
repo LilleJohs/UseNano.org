@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { doSearch } from '../actions/index';
+import { doSearch, doSort } from '../actions/index';
 
 class SearchBar extends Component {
   constructor(props) {
@@ -38,7 +38,7 @@ class SearchBar extends Component {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ doSearch }, dispatch);
+  return bindActionCreators({ doSearch, doSort }, dispatch);
 }
 
 

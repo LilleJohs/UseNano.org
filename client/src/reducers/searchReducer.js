@@ -1,4 +1,4 @@
-export default function(state = [], action) {
+export default function(state = {search: [], sort: "category", correctOrder: true}, action) {
   switch (action.type) {
     case 'SEARCH':
       return action.payload;

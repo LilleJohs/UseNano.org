@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { doSort } from '../actions/index';
 
 class List extends Component {
   constructor(props) {
@@ -9,6 +11,9 @@ class List extends Component {
 
     this.goBack = this.goBack.bind(this);
     this.goForward = this.goForward.bind(this);
+    this.sortCategory = this.sortCategory.bind(this);
+    this.sortName = this.sortName.bind(this);
+    this.sortLocation = this.sortLocation.bind(this);
   }
 
   componentWillReceiveProps()
@@ -57,20 +62,20 @@ class List extends Component {
     var page = this.state.page;
     var start = (page-1)*50;
     var searchLength = this.props.search.length;
-    var end = (start+50 > searchLength) ? searchLength : start+50;
+    var end = (start+50 > searchLength) ? searchLength : start + 50;
     for (var i = start; i < end; i++) {
-      table.push(this.renderContent(this.props.search[i]));
+      table.push(this.renderContent(this.props.search[i], i));
     }
     return table;
   }
 
-  renderContent(data) {
+  renderContent(data, i) {
     switch (data.name) {
       case null:
         return;
       default:
         return (
-          <tr>
+          <tr key={i}>
             <td>
               <a href={data.websitelink} alt={data.name}>
                 <img alt={data.name} src={'logos/' + data.logo} />
@@ -78,7 +83,7 @@ class List extends Component {
               <a href={data.websitelink}>{data.name}</a>
             </td>
             <td>{data.category}</td>
-            <td>Worldwide</td>
+            <td>{data.country}</td>
           </tr>
         );
     }
@@ -90,9 +95,9 @@ class List extends Component {
         <table className="table table-striped table-hover">
           <thead>
             <tr>
-              <th className="merchant">Merchant Name</th>
-              <th className="category">Category</th>
-              <th className="category">Location</th>
+              <th onClick={this.sortName} className="merchant">Merchant Name</th>
+              <th onClick={this.sortCategory} className="category">Category</th>
+              <th onClick={this.sortLocation} className="category">Location</th>
             </tr>
           </thead>
           <tbody>{this.renderEntries()}</tbody>
@@ -105,12 +110,28 @@ class List extends Component {
       </div>
     );
   }
+
+  sortName(){
+    this.props.doSort("name", this.props.sort, this.props.search, this.props.correctOrder);
+  }
+  sortCategory(){
+    this.props.doSort("category", this.props.sort, this.props.search, this.props.correctOrder);
+  }
+  sortLocation(){
+    this.props.doSort("location", this.props.sort, this.props.search, this.props.correctOrder);
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ doSort }, dispatch);
 }
 
 function mapStateToProps(state) {
   return {
-    search: state.search
+    search: state.search.search,
+    sort: state.search.sort,
+    correctOrder: state.search.correctOrder
   };
 }
 
-export default connect(mapStateToProps)(List);
+export default connect(mapStateToProps, mapDispatchToProps)(List);
