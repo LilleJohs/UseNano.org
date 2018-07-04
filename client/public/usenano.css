@@ -68,3 +68,20 @@ tr img {
     text-align: left;
     float: left;
 }
+.nanorevolution {
+  font-weight: 100;
+  font-size: 350%;
+  font-stretch: expanded;
+}
+.nanolist {
+  font-weight: bold;
+}
+.merchantdirectory {
+  margin: 50px 0px 20px 0px;
+}
+
+/*
+your "use nano" icon is not of the best quality so change that.
+- fix your spacing, it's not very consistent.
+- use thickness or sizing for emphasis, so maybe maybe the "join the revolution" thinner and bigger and the "website list.." thicker but smaller. (same with merchant dictionary).
+- make fill out the form a button.*/

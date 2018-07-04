@@ -16,7 +16,7 @@ class SearchBar extends Component {
   render() {
     return (
       <div className="form-group">
-        <h1 className="text-center">
+        <h1 className="text-center merchantdirectory">
           Merchant Directory
         </h1>
         <form className="col-sm-8 col-sm-offset-2">
