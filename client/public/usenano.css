@@ -3,9 +3,9 @@ body { padding-top: 90px; }
   margin: 10px;
 }
 .navbar img {
-  margin-top: 1px;
-  height: 40px;
-  width: 230px;
+  margin-top: 4px;
+  height: 35px;
+  width: 200px;
 }
 ul {
 list-style-type:none;
