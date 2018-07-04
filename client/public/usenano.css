@@ -50,9 +50,14 @@ tr img {
     text-decoration: none;
 }
 .pageButtons {
-  width: 45%;
+  width: 30%;
   text-align: center;
   margin: auto;
+}
+@media only screen and (max-width: 600px){
+  .pageButtons {
+    width: 50%;
+  }
 }
 .pageNumber {
     position: absolute;
@@ -68,7 +73,8 @@ tr img {
     text-align: left;
     float: left;
 }
-.nanorevolution {
+.nanorevolution {margin: 40px 0px 70px 0px;}
+.nanorevolution h1 {
   font-weight: 100;
   font-size: 350%;
   font-stretch: expanded;
@@ -78,6 +84,9 @@ tr img {
 }
 .merchantdirectory {
   margin: 50px 0px 20px 0px;
+}
+.whatisnano {
+  margin: 40px 0px 40px 0px;
 }
 
 /*
