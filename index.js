@@ -44,7 +44,7 @@ app.get('/db', async (req, res) => {
 app.get('/mapdb', async (req, res) => {
   try {
     var doc = yaml.safeLoad(fs.readFileSync("public/physical.yml", 'utf8'));
-    return doc;
+    res.send(doc);
   } catch (e) {
     console.log(e);
   }

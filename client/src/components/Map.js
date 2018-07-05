@@ -17,6 +17,7 @@ class Map extends Component {
     const url = baseURL;
     axios.get(url).then((res) => {
       this.setState({ stores: res.data });
+      console.log(this.state);
     });
   }
 
@@ -29,19 +30,22 @@ class Map extends Component {
   };
 
   renderAllStores() {
+    console.log("Hei");
     var table = [];
     for (let i = 0; i < this.state.stores.length; i++) {
+      console.log(i);
       table.push(this.renderNewStore(this.state.stores[i]));
     }
+    return table;
   }
 
   renderNewStore(store) {
     console.log(store);
     return (
       <div
-        lat={59.955413}
-        lng={30.337844}
-        text={'Kreyser Avrora'}
+        lat={store.lat}
+        lng={store.lng}
+        text={store.name}
       />
     );
   }
