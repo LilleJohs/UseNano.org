@@ -18,7 +18,6 @@ class Map extends Component {
     axios.get(url).then((res) => {
       this.setState({ stores: res.data });
     });
-
   }
 
   static defaultProps = {
