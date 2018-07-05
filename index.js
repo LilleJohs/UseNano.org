@@ -41,6 +41,14 @@ app.get('/db', async (req, res) => {
     console.log(e);
   }
 });
+app.get('/mapdb', async (req, res) => {
+  try {
+    var doc = yaml.safeLoad(fs.readFileSync("public/physical.yml", 'utf8'));
+    return doc;
+  } catch (e) {
+    console.log(e);
+  }
+});
 
 if (process.env.NODE_ENV === 'production') {
   // Express will serve up production assets

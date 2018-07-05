@@ -1,0 +1,16 @@
+%YAML 1.1
+---
+# spendRaiWebsites.physical
+-
+  name: "Naturkost Leiferde"
+  category: "Organic Food"
+  lat: 52.438355
+  lng: 10.4400
+  timestamp: "2018-01-31"
+-
+  name: "Wild und Frei"
+  category: "Head Shop"
+  lat: 50.928874
+  lng: 6.940641
+  timestamp: "2018-01-31"
+-
