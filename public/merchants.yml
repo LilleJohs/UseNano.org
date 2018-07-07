@@ -18,14 +18,6 @@
   timestamp: "2018-01-31 14:12:29"
   logo: "raigames.png"
 -
-  id: 3
-  websitelink: "https://blockfevr.com/game/dice/XRB"
-  category: "Gambling"
-  name: "BlockFevr"
-  country: "Worldwide"
-  timestamp: "2018-01-31 14:12:29"
-  logo: "none.png"
--
   id: 4
   websitelink: "https://lacicloud.net/"
   category: "Cloud Storage and Web Hosting"
@@ -282,14 +274,6 @@
   timestamp: "2018-01-31 14:12:29"
   logo: "keeperrl.png"
 -
-  id: 38
-  websitelink: "https://bitlit.io"
-  category: "Marketplace"
-  name: "BitLit"
-  country: "Worldwide"
-  timestamp: "2018-01-31 14:12:29"
-  logo: "bitlit.png"
--
   id: 39
   websitelink: "https://tonyseliquid.com/"
   category: "E-Liquid"
@@ -394,14 +378,6 @@
   timestamp: "2018-01-31 14:12:29"
   logo: "sekerkatomas.png"
 -
-  id: 52
-  websitelink: "https://blockverse.io"
-  category: "Marketplace"
-  name: "BlockVerse"
-  country: "Worldwide"
-  timestamp: "2018-01-31 14:12:29"
-  logo: "blockverse.png"
--
   id: 53
   websitelink: "https://www.snorre-laces.com/"
   category: "Shoelaces"
@@ -474,14 +450,6 @@
   timestamp: "2018-02-03 09:56:55"
   logo: "none.png"
 -
-  id: 61
-  websitelink: "https://guesswinner.com/"
-  category: "Gambling"
-  name: "GuessWinner"
-  country: "Worldwide"
-  timestamp: "2018-02-03 09:58:38"
-  logo: "none.png"
--
   id: 62
   websitelink: "http://www.pinoygamestore.com"
   category: "Gaming"
@@ -496,14 +464,6 @@
   name: "Nano Merch"
   country: "Worldwide"
   timestamp: "2018-02-05 11:23:28"
-  logo: "none.png"
--
-  id: 64
-  websitelink: "http://www.brisbanetechrepairs.com"
-  category: "Technology Repairs"
-  name: "Brisbane Tech Repairs"
-  country: "Worldwide"
-  timestamp: "2018-02-05 12:40:00"
   logo: "none.png"
 -
   id: 65
@@ -537,14 +497,6 @@
   country: "USA"
   timestamp: "2018-02-13 13:31:58"
   logo: "gpstracking.png"
--
-  id: 69
-  websitelink: "http://www.workfornano.com/"
-  category: "Micro Job"
-  name: "NanoWork"
-  country: "Global"
-  timestamp: "2018-02-20 11:53:44"
-  logo: "none.png"
 -
   id: 70
   websitelink: "https://saracarli.com/"
@@ -665,14 +617,6 @@
   country: "Worldwide"
   timestamp: "2018-03-06"
   logo: "nanothings.png"
--
-  id: 87
-  websitelink: "https://nakamotees.com/"
-  category: "Cryptocurrency Merchandise"
-  name: "Nakamotees"
-  country: "Worldwide"
-  timestamp: "2018-03-06"
-  logo: "nakamotees.png"
 -
   id: 88
   websitelink: "https://geckovapesco.com/"
