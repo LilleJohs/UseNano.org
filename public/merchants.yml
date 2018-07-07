@@ -849,4 +849,12 @@
   country: "Worldwide"
   timestamp: "2018-06-21"
   logo: "nanogames.png"
+-
+  id: 117
+  name: "DasTrucks"
+  category: "Truck Parts"
+  country: "Worldwide"
+  timestamp: "2018-06-23"
+  websitelink: "http://dastrucks.com/"
+  logo: "none.png"
 ...
