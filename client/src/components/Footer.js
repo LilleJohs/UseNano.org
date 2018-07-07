@@ -9,7 +9,7 @@ class Footer extends Component {
           <h2 className="checkOutLinks"><a className="link" href="https://brainblocks.io/">brainblocks</a> and <a className="link" href="https://nanocashier.com/">NanoCashier</a></h2>
         </div>
         <div className="footer py-1 text-center">
-          <p>Contact us on usenano@gmail.com</p>
+          <p>Contact us on spendnano@gmail.com</p>
 
           <p>Copyright © Use Nano 2018</p>
         </div>
