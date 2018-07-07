@@ -8,7 +8,12 @@ export class MapContainer extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { stores: [] };
+    this.state = {
+      stores: [],
+      showingInfoWindow: false,
+      activeMarker: {},
+      selectedPlace: {}
+    };
   }
 
   componentDidMount() {
@@ -18,11 +23,20 @@ export class MapContainer extends Component {
     });
   }
 
+  onMarkerClick = (props, marker, e) =>
+     this.setState({
+       selectedPlace: props,
+       activeMarker: marker,
+       showingInfoWindow: true
+     });
+
   renderOne(store, i) {
     return (
       <Marker
+        onClick={this.onMarkerClick}
         title={store.name}
         name={store.category}
+        website={store.website}
         key={i}
         position={{ lat: store.lat, lng: store.lng }}
       />
@@ -51,9 +65,14 @@ export class MapContainer extends Component {
         >
           {this.renderAll()}
 
-          <InfoWindow onClose={this.onInfoWindowClose}>
-            <div>
-              <h1>Test</h1>
+          <InfoWindow
+            marker={this.state.activeMarker}
+            visible={this.state.showingInfoWindow}
+          >
+            <div style={{margin: '-10px 0px 0px 0px'}}>
+              <h3>{this.state.selectedPlace.title}</h3>
+              <h4>{this.state.selectedPlace.name}</h4>
+              <h4><a target="_blank" href={this.state.selectedPlace.website}>{this.state.selectedPlace.website}</a></h4>
             </div>
           </InfoWindow>
         </Map>
