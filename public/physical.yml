@@ -7,9 +7,53 @@
   lat: 52.438355
   lng: 10.4400
   timestamp: "2018-01-31"
+  website: "https://wildundfrei-headshop.de/"
 -
   name: "Wild und Frei"
   category: "Head Shop"
   lat: 50.928874
   lng: 6.940641
   timestamp: "2018-01-31"
+  website: "https://wildundfrei-headshop.de/"
+-
+  name: "Ojeda, Andrade e Amaral Advogados"
+  category: "Advocacia"
+  lat: -23.611206
+  lng: -46.571278
+  timestamp: "2018-03-27"
+  website: ""
+-
+  name: "Interise Legal"
+  category: "Australie Legal Services"
+  lat: -37.814866
+  lng: 144.960302
+  timestamp: "2018-04-02"
+  website: ""
+-
+  name: "COMPUTER REPAIR Las Vegas, INC"
+  category: "Laptop / Desktop Repair"
+  lat: 36.209760
+  lng: -115.133562
+  timestamp: "2018-04-06"
+  website: "https://crlv.com/"
+-
+  name: "Anarco Tatuaria"
+  category: "Tattoo Studio"
+  lat: -23.546701
+  lng: -46.573967
+  timestamp: "2018-06-01"
+  website: "http://anarcotatuaria.com.br"
+-
+  name: "LTD Tennis Academy"
+  category: "Sport Coaching"
+  lat: -33.893182
+  lng: 18.644777
+  timestamp: "2018-06-23"
+  website: "http://www.ltdtennis.co.za"
+-
+  name: "DasTrucks"
+  category: "Automotive"
+  lat: 28.698998
+  lng: 77.138417
+  timestamp: "2018-06-23"
+  website: "http://dastrucks.com/"
