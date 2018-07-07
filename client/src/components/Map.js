@@ -1,68 +1,67 @@
 import React, { Component } from 'react';
-import GoogleMapReact from 'google-map-react';
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 import axios from 'axios';
 
 const baseURL = 'https://paywithrai.com/mapdb';
 
-class Map extends Component {
+export class MapContainer extends Component {
   constructor(props) {
     super(props);
-    this.state = { stores: [] };
 
-    this.renderAllStores = this.renderAllStores.bind(this);
-    this.renderNewStore = this.renderNewStore.bind(this);
+    this.state = { stores: [] };
   }
 
   componentDidMount() {
     const url = baseURL;
-    axios.get(url).then((res) => {
+    axios.get(url).then(res => {
       this.setState({ stores: res.data });
-      console.log(this.state);
     });
   }
 
-  static defaultProps = {
-    center: {
-      lat: 59.95,
-      lng: 30.33
-    },
-    zoom: 11
-  };
-
-  renderAllStores() {
-    console.log("Hei");
-    var table = [];
-    for (let i = 0; i < this.state.stores.length; i++) {
-      console.log(i);
-      table.push(this.renderNewStore(this.state.stores[i]));
-    }
-    return table;
-  }
-
-  renderNewStore(store) {
-    console.log(store);
+  renderOne(store, i) {
     return (
-      <div
-        lat={store.lat}
-        lng={store.lng}
-        text={store.name}
+      <Marker
+        title={store.name}
+        name={store.category}
+        key={i}
+        position={{ lat: store.lat, lng: store.lng }}
       />
     );
   }
 
+  renderAll() {
+    let table = [];
+    let { stores } = this.state;
+    for (let i = 0; i < stores.length; i++) {
+      table.push(this.renderOne(stores[i], i));
+    }
+    return table;
+  }
+
   render() {
     return (
-      // Important! Always set the container height explicitly
-      <div style={{ height: '88.4vh', width: '100%', margin: '-24px 0px' }}>
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: 'AIzaSyD3INZ5BSFvJLSl-eQONSY7BvvTNJGyTFo' }}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
-        />
-        {this.renderAllStores()}
+      <div style={{ margin: '-24px 0px -90px 0px' }}>
+        <Map
+          google={this.props.google}
+          initialCenter={{
+            lat: 50,
+            lng: 10
+          }}
+          zoom={5}
+        >
+          {this.renderAll()}
+
+          <InfoWindow onClose={this.onInfoWindowClose}>
+            <div>
+              <h1>Test</h1>
+            </div>
+          </InfoWindow>
+        </Map>
       </div>
     );
   }
 }
 
-export default Map;
+export default GoogleApiWrapper({
+  apiKey: 'AIzaSyD3INZ5BSFvJLSl-eQONSY7BvvTNJGyTFo'
+})(MapContainer);
