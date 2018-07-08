@@ -8,7 +8,6 @@ const helmet = require('helmet');
 const app = express();
 
 app.set('trust proxy', true);
-app.use(wwwRedirect);
 
 app.use(cors());
 app.use(helmet());
