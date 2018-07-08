@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 import axios from 'axios';
 
-const baseURL = 'http://www.usenano.com/mapdb';
+const baseURL = 'http://www.usenano.org/mapdb';
 
 export class MapContainer extends Component {
   constructor(props) {
