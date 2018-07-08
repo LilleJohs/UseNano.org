@@ -14,9 +14,16 @@ const app = express();
   }
   next();
 };
-
-
 app.use(wwwRedirect);*/
+
+app.use(function (req, res, next) {
+  if (!/http/.test(req.protocol)) {
+    res.redirect("http://" + req.headers.host + req.url);
+  } else {
+    return next();
+  }
+});
+
 //app.set('trust proxy', true);
 app.use(cors());
 //pp.use(helmet());
