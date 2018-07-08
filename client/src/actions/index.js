@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'https://paywithrai.com/db?search=';
+const baseURL = 'https://www.usenano.org/db?search=';
 
 export const doSearch = (searchString) => async dispatch => {
   const url = baseURL + searchString;
