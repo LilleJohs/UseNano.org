@@ -7,24 +7,14 @@ const path = require('path');
 
 const app = express();
 
-/*function wwwRedirect(req, res, next) {
+function wwwRedirect(req, res, next) {
   if (req.headers.host.slice(0, 4) === 'www.') {
       var newHost = req.headers.host.slice(4);
       return res.redirect(301, req.protocol + '://' + newHost + req.originalUrl);
   }
   next();
 };
-app.use(wwwRedirect);*/
-
-function requireHTTPS(req, res, next) {
-    if (req.secure) {
-      //FYI this should work for local development as well
-      return res.redirect('http://' + req.get('host') + req.url);
-    }
-    next();
-}
-
-app.use(requireHTTPS);
+app.use(wwwRedirect);
 
 app.set('trust proxy', true);
 app.use(cors());
