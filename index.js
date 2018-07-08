@@ -7,8 +7,17 @@ const helmet = require('helmet');
 
 const app = express();
 
-app.set('trust proxy', true);
+/*function wwwRedirect(req, res, next) {
+  if (req.headers.host.slice(0, 4) === 'www.') {
+      var newHost = req.headers.host.slice(4);
+      return res.redirect(301, req.protocol + '://' + newHost + req.originalUrl);
+  }
+  next();
+};
 
+
+app.use(wwwRedirect);*/
+//app.set('trust proxy', true);
 app.use(cors());
 app.use(helmet());
 app.use(express.static(path.join(__dirname, 'public')));
