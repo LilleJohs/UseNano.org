@@ -17,11 +17,7 @@ const app = express();
 app.use(wwwRedirect);*/
 
 function requireHTTPS(req, res, next) {
-    if (req.secure) {
-        //FYI this should work for local development as well
-        return res.redirect('http://' + req.get('host') + req.url);
-    }
-    next();
+  return res.redirect('http://' + req.get('host') + req.url);
 }
 
 app.use(requireHTTPS);
