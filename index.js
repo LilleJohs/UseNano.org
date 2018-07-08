@@ -3,7 +3,7 @@ const cors = require('cors');
 const yaml = require('js-yaml');
 const fs = require('fs');
 const path = require('path');
-const helmet = require('helmet');
+//const helmet = require('helmet');
 
 const app = express();
 
@@ -19,7 +19,7 @@ const app = express();
 app.use(wwwRedirect);*/
 //app.set('trust proxy', true);
 app.use(cors());
-app.use(helmet());
+//pp.use(helmet());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/db', async (req, res) => {
