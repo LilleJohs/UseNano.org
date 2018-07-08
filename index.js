@@ -16,7 +16,7 @@ const app = express();
 };
 app.use(wwwRedirect);*/
 
-app.set('trust proxy', true);
+//app.set('trust proxy', true);
 app.use(cors());
 //pp.use(helmet());
 app.use(express.static(path.join(__dirname, 'public')));
