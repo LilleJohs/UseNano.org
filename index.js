@@ -17,12 +17,16 @@ const app = express();
 app.use(wwwRedirect);*/
 
 function requireHTTPS(req, res, next) {
-  return res.redirect('http://' + req.get('host') + req.url);
+    if (req.secure) {
+      //FYI this should work for local development as well
+      return res.redirect('http://' + req.get('host') + req.url);
+    }
+    next();
 }
 
 app.use(requireHTTPS);
 
-//app.set('trust proxy', true);
+app.set('trust proxy', true);
 app.use(cors());
 //pp.use(helmet());
 app.use(express.static(path.join(__dirname, 'public')));
