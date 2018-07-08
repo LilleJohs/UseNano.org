@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'www.usenano.org/db?search=';
+const baseURL = 'http://www.usenano.org/db?search=';
 
 export const doSearch = (searchString) => async dispatch => {
   const url = baseURL + searchString;
