@@ -148,7 +148,7 @@
 -
   id: 21
   websitelink: "https://www.pexpeppers.com/"
-  category: "Hot Sauce"
+  category: "Hot Sauces"
   name: "PexPeppers"
   country: "Worldwide"
   timestamp: "2018-01-31 14:12:29"
@@ -204,7 +204,7 @@
 -
   id: 28
   websitelink: "https://thegrowkit.ca"
-  category: "Grow Kit"
+  category: "Grow Kits"
   name: "Grow Kit"
   country: "Canada, USA"
   timestamp: "2018-01-31 14:12:29"
@@ -268,7 +268,7 @@
 -
   id: 37
   websitelink: "http://keeperrl.com"
-  category: "PC Game"
+  category: "PC Games"
   name: "KeeperRL"
   country: "Worldwide"
   timestamp: "2018-01-31 14:12:29"
@@ -276,7 +276,7 @@
 -
   id: 39
   websitelink: "https://tonyseliquid.com/"
-  category: "E-Liquid"
+  category: "E-Liquids"
   name: "Tony's Eliquid Co."
   country: "USA"
   timestamp: "2018-01-31 14:12:29"
@@ -412,7 +412,7 @@
 -
   id: 57
   websitelink: "https://timebook.life"
-  category: "Fun Planners for a Great Life"
+  category: "Fun Planners"
   name: "TimeBook"
   country: "Worldwide"
   timestamp: "2018-01-31 14:12:29"
@@ -459,8 +459,8 @@
   logo: "pinoy.png"
 -
   id: 63
-  websitelink: "http://nanomerch.net"
-  category: "Nano Merchandise"
+  websitelink: "https://nanomerch.net/"
+  category: "Nano Merchandises"
   name: "Nano Merch"
   country: "Worldwide"
   timestamp: "2018-02-05 11:23:28"
@@ -516,7 +516,7 @@
 -
   id: 72
   websitelink: "http://tedh.co/"
-  category: "Merchandise"
+  category: "Merchandises"
   name: "TeddyH"
   country: "Worldwide"
   timestamp: "2018-02-25 20:22:41"
@@ -524,7 +524,7 @@
 -
   id: 73
   websitelink: "http://faucetcollector.com/"
-  category: "Faucet Robot"
+  category: "Faucet Robots"
   name: "Faucet Collector"
   country: "Worldwide"
   timestamp: "2018-02-25 20:24:10"
@@ -548,7 +548,7 @@
 -
   id: 76
   websitelink: "https://vapeclubmy.com/"
-  category: "Vape"
+  category: "Vape Products"
   name: "Vape Club"
   country: "Worldwide"
   timestamp: "2018-02-26 12:59:21"
@@ -556,7 +556,7 @@
 -
   id: 79
   websitelink: "https://shop.rom.ac/"
-  category: "Art and Comic"
+  category: "Art and Comics"
   name: "Romantically Apocalyptic"
   country: "Worldwide"
   timestamp: "2018-03-03 11:38:50"
@@ -588,7 +588,7 @@
 -
   id: 83
   websitelink: "http://gurupresets.com/"
-  category: "Designs"
+  category: "Design"
   name: "Guru Presets"
   country: "Worldwide"
   timestamp: "2018-03-06"
@@ -612,7 +612,7 @@
 -
   id: 86
   websitelink: "https://nanothings.store/"
-  category: "Nano Merchandise"
+  category: "Nano Merchandises"
   name: "Nano Things"
   country: "Worldwide"
   timestamp: "2018-03-06"
@@ -620,7 +620,7 @@
 -
   id: 88
   websitelink: "https://geckovapesco.com/"
-  category: "E-Liquid"
+  category: "E-Liquids"
   name: "Gecko Vapes Co"
   country: "UK"
   timestamp: "2018-03-06"
@@ -676,7 +676,7 @@
 -
   id: 95
   websitelink: "http://www.astralcloudz.com"
-  category: "E-Juice"
+  category: "E-Juices"
   name: "AstralCloudz Vape Shop"
   country: "Worldwide"
   timestamp: "2018-03-13"
@@ -788,7 +788,7 @@
 -
   id: 109
   websitelink: "https://fymhotsauce.rocks"
-  category: "Hot Sauce"
+  category: "Hot Sauces"
   name: "FYM Hot Sauce"
   country: "Worldwide"
   timestamp: "2018-06-05"
@@ -804,7 +804,7 @@
 -
   id: 111
   websitelink: "https://reclusivetees.com/"
-  category: "Apparel"
+  category: "Apparels"
   name: "Reclusive Tees"
   country: "Worldwide"
   timestamp: "2018-06-14"
@@ -812,7 +812,7 @@
 -
   id: 112
   websitelink: "https://store.voluntat.com/pets-water-bottle"
-  category: "Dog Water Dispenser"
+  category: "Dog Water Dispensers"
   name: "Voluntat"
   country: "Worldwide"
   timestamp: "2018-06-14"
