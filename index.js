@@ -19,9 +19,9 @@ app.use(wwwRedirect);*/
 //app.set('trust proxy', true);
 app.use(function(req,res,next){
   if (req.headers['x-forwarded-proto'] == 'https') {
-      return res.redirect(301, 'http://www.' + req.headers.host + '/');
+    return res.redirect(301, 'http://www.' + req.headers.host + '/');
   } else {
-      return next();
+    return next();
   }
 });
 app.use(cors());
