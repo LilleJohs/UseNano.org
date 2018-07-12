@@ -29,6 +29,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/db', async (req, res) => {
+  //Send physical store data for front page
   try {
     var doc = yaml.safeLoad(fs.readFileSync("public/merchants.yml", 'utf8'));
     var search = req.query.search.toLowerCase();
@@ -47,7 +48,9 @@ app.get('/db', async (req, res) => {
     console.log(e);
   }
 });
+
 app.get('/mapdb', async (req, res) => {
+  //Send map data
   try {
     var doc = yaml.safeLoad(fs.readFileSync("public/physical.yml", 'utf8'));
     res.send(doc);
@@ -57,11 +60,8 @@ app.get('/mapdb', async (req, res) => {
 });
 
 if (process.env.NODE_ENV === 'production') {
-  // Express will serve up production assets
   app.use(express.static('client/build'));
 
-  // Express will serve up the index.html file
-  // if it doesn't recognize the route
   app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
