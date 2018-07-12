@@ -42,7 +42,7 @@ class List extends Component {
   }
   renderPageNumber() {
     if (this.props.search.length > 50) {
-      return <span className="pageNumber">&nbsp;&nbsp;Page {this.state.page} / {Math.ceil(this.props.search.length / 50)}&nbsp;&nbsp;</span>
+      return <span className="pageNumber">Page {this.state.page} / {Math.ceil(this.props.search.length / 50)}</span>
     }
   }
   renderForwardButton() {

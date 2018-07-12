@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 import axios from 'axios';
 
-const baseURL = 'http://www.usenano.org/mapdb';
-
 export class MapContainer extends Component {
   constructor(props) {
     super(props);
@@ -17,8 +15,14 @@ export class MapContainer extends Component {
   }
 
   componentDidMount() {
-    const url = baseURL;
-    axios.get(url).then(res => {
+    let baseURL;
+    if (process.env.NODE_ENV === 'production') {
+      baseURL = 'http://www.usenano.org/mapdb';
+    } else {
+      baseURL = 'http://localhost:5000/mapdb';
+    }
+
+    axios.get(baseURL).then(res => {
       this.setState({ stores: res.data });
     });
   }

@@ -25,7 +25,7 @@ app.use(function(req,res,next){
   }
 });
 app.use(cors());
-//pp.use(helmet());
+//app.use(helmet());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/db', async (req, res) => {
