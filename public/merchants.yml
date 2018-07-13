@@ -750,4 +750,11 @@
   timestamp: "2018-06-23"
   websitelink: "http://dastrucks.com/"
   logo: "none.png"
+-
+  name: "Put.io"
+  category: "Cloud Storage"
+  country: "Worldwide"
+  timestamp: "2018-07-13"
+  websitelink: "https://put.io"
+  logo: "putio.png"
 ...
