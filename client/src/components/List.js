@@ -77,10 +77,10 @@ class List extends Component {
         return (
           <tr key={i}>
             <td>
-              <a target="_blank" href={data.websitelink} alt={data.name}>
+              <a target="_blank" rel="noopener noreferrer" href={data.websitelink} alt={data.name}>
                 <img alt={data.name} src={'logos/' + data.logo} />
               </a>
-              <a target="_blank" href={data.websitelink}>{data.name}</a>
+              <a target="_blank" rel="noopener noreferrer" href={data.websitelink}>{data.name}</a>
             </td>
             <td>{data.category}</td>
             <td>{data.country}</td>
