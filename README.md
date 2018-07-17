@@ -10,7 +10,6 @@
 Usenano.org is a website that lists all merchants that accept Nano as payment.
 
 ---
-
 ### Contributing
 ---
 
@@ -23,3 +22,6 @@ You can also just send me a message on Reddit [u/LilleJohs](https://www.reddit.c
 If you want to add a new feature or make a better design for the website, please contact me and we'll discuss it.
 
 ---
+### Run in development
+---
+The website runs with Nodejs on backend and React on front end. To run it locally, download all dependencies on both client side and server side, go to root folder and type 'npm run dev'.
