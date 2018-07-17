@@ -24,4 +24,4 @@ If you want to add a new feature or make a better design for the website, please
 ---
 ### Run in development
 ---
-The website runs with Nodejs on backend and React on front end. To run it locally, download all dependencies on both client side and server side, go to root folder and type 'npm run dev'.
+The website runs with Nodejs on backend and React on front end. To run it locally, download all dependencies on both client side and server side, go to root folder and type 'npm run dev'. Note that you will need to provide your own Google Maps API key to make the map function work.
