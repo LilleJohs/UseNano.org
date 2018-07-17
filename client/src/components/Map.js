@@ -17,7 +17,7 @@ export class MapContainer extends Component {
   componentDidMount() {
     let baseURL;
     if (process.env.NODE_ENV === 'production') {
-      baseURL = 'http://www.usenano.org/mapdb';
+      baseURL = 'https://usenano.org/mapdb';
     } else {
       baseURL = 'http://localhost:5000/mapdb';
     }

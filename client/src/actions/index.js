@@ -8,7 +8,7 @@ export const doSearch = (searchString) => async dispatch => {
 
   let baseURL;
   if (process.env.NODE_ENV === 'production') {
-    baseURL = 'http://www.usenano.org/db?search=';
+    baseURL = 'https://usenano.org/db?search=';
   } else {
     baseURL = 'http://localhost:5000/db?search=';
   }
