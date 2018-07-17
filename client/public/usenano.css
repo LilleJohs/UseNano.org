@@ -73,7 +73,7 @@ tr img {
 .nanorevolution h1 {
   font-size: 350%;
   margin: 40px 0px 70px 0px;
-  color: rgba(73, 144, 224, 255)
+  /*color: rgba(73, 144, 224, 255)*/
 }
 .nanolist {
   font-weight: bold;

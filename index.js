@@ -17,13 +17,6 @@ const app = express();
 app.use(wwwRedirect);*/
 
 //app.set('trust proxy', true);
-app.use(function(req,res,next){
-  if (req.headers['x-forwarded-proto'] == 'https') {
-    return res.redirect(301, 'http://www.' + req.headers.host + '/');
-  } else {
-    return next();
-  }
-});
 app.use(cors());
 //app.use(helmet());
 app.use(express.static(path.join(__dirname, 'public')));
