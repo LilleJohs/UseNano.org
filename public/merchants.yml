@@ -9,6 +9,7 @@
   timestamp: "2018-01-31"
   logo: "madebydocs.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://raigames.io/"
   category: "Gambling"
@@ -17,6 +18,7 @@
   timestamp: "2018-01-31"
   logo: "raigames.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://lacicloud.net/"
   category: "Cloud Storage and Web Hosting"
@@ -25,6 +27,7 @@
   timestamp: "2018-01-31"
   logo: "laci.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://rauchroad.com/"
   category: "Sunglasses"
@@ -33,6 +36,7 @@
   timestamp: "2018-01-31"
   logo: "rauchroad.png"
   discount: "40% discount on everything with coupon code 'NANO'"
+  tags: ""
 -
   websitelink: "https://www.joshjungle.com/"
   category: "Hot Sauces"
@@ -41,6 +45,7 @@
   timestamp: "2018-01-31"
   logo: "joshjungle.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://eternitytower.net/"
   category: "Web Game"
@@ -49,6 +54,7 @@
   timestamp: "2018-01-31"
   logo: "eternitytower.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.etsy.com/no-en/shop/CryptoCatDad"
   category: "Cat Toy"
@@ -57,6 +63,7 @@
   timestamp: "2018-01-31"
   logo: "none.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://www.growingopportunitiesinternational.org/donate.html"
   category: "Charity"
@@ -65,6 +72,7 @@
   timestamp: "2018-01-31"
   logo: "growingopportunities.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://www.smallsoundbigsound.com/new-for-2018-pay-with-raiblocks/"
   category: "Guitar Pedals"
@@ -73,6 +81,7 @@
   timestamp: "2018-01-31"
   logo: "smallsoundbigsound.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://cohomologylabs.tech/"
   category: "DApp Development"
@@ -81,6 +90,7 @@
   timestamp: "2018-01-31"
   logo: "cohomologylabs.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://late-apex-racing.com/pages/home-tracks"
   category: "Motorsport Apparel"
@@ -89,6 +99,7 @@
   timestamp: "2018-01-31"
   logo: "lateapex.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://www.naturkost-leiferde.de/"
   category: "Organic Food"
@@ -97,6 +108,7 @@
   timestamp: "2018-01-31"
   logo: "naturkostleiferde.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.headphones.com/"
   category: "Headphones"
@@ -105,6 +117,7 @@
   timestamp: "2018-01-31"
   logo: "headphones.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.robandlizzie.com/"
   category: "Wedding Photography"
@@ -113,6 +126,7 @@
   timestamp: "2018-01-31"
   logo: "robandlizzie.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.medbooks.cz/"
   category: "Medical Books"
@@ -121,6 +135,7 @@
   timestamp: "2018-01-31"
   logo: "medbooks.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://www.desertislandsurvival.com/"
   category: "Island Expeditions"
@@ -129,6 +144,7 @@
   timestamp: "2018-01-31"
   logo: "desertislandsurvival.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://rahstraps.bigcartel.com/pay-with-nano-20-off"
   category: "Camera Straps"
@@ -136,7 +152,8 @@
   country: "Worldwide"
   timestamp: "2018-01-31"
   logo: "rahstraps.png"
-  discount: ""
+  discount: "20% on everything"
+  tags: ""
 -
   websitelink: "https://www.hitsteps.com/"
   category: "Web Analytics"
@@ -145,6 +162,7 @@
   timestamp: "2018-01-31"
   logo: "hitsteps.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.pexpeppers.com/"
   category: "Hot Sauces"
@@ -153,6 +171,7 @@
   timestamp: "2018-01-31"
   logo: "pexpeppers.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://wildundfrei-headshop.de"
   category: "Head Shop"
@@ -161,6 +180,7 @@
   timestamp: "2018-01-31"
   logo: "wildundfrei.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.sfbmwcoding.com/now-accepting-raiblocks/"
   category: "BMW Coding Options"
@@ -169,6 +189,7 @@
   timestamp: "2018-01-31"
   logo: "sfbmwcoding.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://lingualift.com/"
   category: "Language Courses"
@@ -177,6 +198,7 @@
   timestamp: "2018-01-31"
   logo: "lingualift.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://ymir-online.com/"
   category: "Multiplayer Game"
@@ -185,6 +207,7 @@
   timestamp: "2018-01-31"
   logo: "ymir.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://scottmillsart.com/contact/"
   category: "Art"
@@ -193,6 +216,7 @@
   timestamp: "2018-01-31"
   logo: "scottmills.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://shop.xrb.life/"
   category: "Buy from eBay with XRB"
@@ -201,6 +225,7 @@
   timestamp: "2018-01-31"
   logo: "xrblife.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://thegrowkit.ca"
   category: "Grow Kits"
@@ -209,6 +234,7 @@
   timestamp: "2018-01-31"
   logo: "growkit.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.donga.fr"
   category: "Construction Materials"
@@ -217,6 +243,7 @@
   timestamp: "2018-01-31"
   logo: "donga.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.doppelstore.com.br/"
   category: "Clothing"
@@ -225,6 +252,7 @@
   timestamp: "2018-01-31"
   logo: "doppelstore.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://cryptodesigns.io"
   category: "Cryptocurrency Artwork"
@@ -233,6 +261,7 @@
   timestamp: "2018-01-31"
   logo: "cryptodesigns.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://servebyte.com"
   category: "Web Hosting and Servers"
@@ -241,6 +270,7 @@
   timestamp: "2018-01-31"
   logo: "servebyte.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://creditglory.com"
   category: "Credit Repair"
@@ -249,6 +279,7 @@
   timestamp: "2018-01-31"
   logo: "creditglory.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://naviforcewatch.store/"
   category: "Men's Watches"
@@ -257,6 +288,7 @@
   timestamp: "2018-01-31"
   logo: "naviforce.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.halfmoonmods.com"
   category: "Vape Products"
@@ -265,6 +297,7 @@
   timestamp: "2018-01-31"
   logo: "halfmoonmods.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://keeperrl.com"
   category: "PC Games"
@@ -273,6 +306,7 @@
   timestamp: "2018-01-31"
   logo: "keeperrl.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://tonyseliquid.com/"
   category: "E-Liquids"
@@ -280,7 +314,8 @@
   country: "USA"
   timestamp: "2018-01-31"
   logo: "tonyseliquid.png"
-  discount: ""
+  discount: "35% discount excluding shipping on everything with discount code 'nano'"
+  tags: ""
 -
   websitelink: "http://www.fermentationculture.eu/"
   category: "Koji Spores"
@@ -289,6 +324,7 @@
   timestamp: "2018-01-31"
   logo: "fermentationculture.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://loveateverysight.com/"
   category: "Personalized Cards"
@@ -297,6 +333,7 @@
   timestamp: "2018-01-31"
   logo: "loveateverysight.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.fixtri.com.br/"
   category: "Bicycle Stickers"
@@ -305,6 +342,7 @@
   timestamp: "2018-01-31"
   logo: "fixtri.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://ppcprotect.com/cryptocurrencies/"
   category: "Ad Fraud Detection"
@@ -313,6 +351,7 @@
   timestamp: "2018-01-31"
   logo: "ppcprotect.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://xrbnodes.com/"
   category: "RaiBlocks Node Setup"
@@ -321,6 +360,7 @@
   timestamp: "2018-01-31"
   logo: "xrbnodes.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.dreamlandmagic.com"
   category: "Magic Shop"
@@ -329,6 +369,7 @@
   timestamp: "2018-01-31"
   logo: "dreamlandmagic.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://creativedesignlab.co/kayla/"
   category: "Graphic Designer"
@@ -337,6 +378,7 @@
   timestamp: "2018-01-31"
   logo: "kaylalauren.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://thecopperhat.ca/"
   category: "Traditional Shaving and Beard Supplies"
@@ -345,6 +387,7 @@
   timestamp: "2018-01-31"
   logo: "thecopperhat.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://edgeworthdesigncompany.com/"
   category: "Web Design"
@@ -353,6 +396,7 @@
   timestamp: "2018-01-31"
   logo: "edgeworthdesigncompany.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://aclcreativestudio.com"
   category: "Film and Book Distribution and Branding"
@@ -361,6 +405,7 @@
   timestamp: "2018-01-31"
   logo: "aclcreativestudio.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://www.doac.us"
   category: "Cryptocurrency Artwork"
@@ -369,6 +414,7 @@
   timestamp: "2018-01-31"
   logo: "artcryptomancy.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://sekerkatomas.cz/obchod/"
   category: "E-Litterature"
@@ -377,6 +423,7 @@
   timestamp: "2018-01-31"
   logo: "sekerkatomas.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.snorre-laces.com/"
   category: "Shoelaces"
@@ -385,6 +432,7 @@
   timestamp: "2018-01-31"
   logo: "snorre.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://jackstaxback.com"
   category: "Tax Returns"
@@ -393,6 +441,7 @@
   timestamp: "2018-01-31"
   logo: "jackstaxback.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://franchise.boutique"
   category: "FDD Documents"
@@ -401,6 +450,7 @@
   timestamp: "2018-01-31"
   logo: "franchiseboutique.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.domein-direct.com"
   category: "Web Hosting"
@@ -409,6 +459,7 @@
   timestamp: "2018-01-31"
   logo: "domeindirect.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://timebook.life"
   category: "Fun Planners"
@@ -417,6 +468,7 @@
   timestamp: "2018-01-31"
   logo: "timebook.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://cryptoaudio.club/"
   category: "Budget Earphones & Earbuds"
@@ -425,6 +477,7 @@
   timestamp: "2018-01-31"
   logo: "cryptoaudioclub.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://wkend.club"
   category: "Sunglasses"
@@ -433,6 +486,7 @@
   timestamp: "2018-01-31"
   logo: "wkend.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://vpnintochina.com/"
   category: "VPN"
@@ -441,6 +495,7 @@
   timestamp: "2018-03-01"
   logo: "none.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://www.bitcoinpsychic.com/"
   category: "Psychic Readings"
@@ -449,6 +504,7 @@
   timestamp: "2018-02-03"
   logo: "none.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://www.pinoygamestore.com"
   category: "Gaming"
@@ -457,6 +513,7 @@
   timestamp: "2018-02-04"
   logo: "pinoy.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://nanomerch.net/"
   category: "Nano Merchandises"
@@ -465,6 +522,7 @@
   timestamp: "2018-02-05"
   logo: "none.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://www.keepspaceblack.org"
   category: "Weird Charity"
@@ -473,6 +531,7 @@
   timestamp: "2018-02-09"
   logo: "keepspaceblack.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.leyland.com/"
   category: "Women's Activewear"
@@ -481,6 +540,7 @@
   timestamp: "2018-02-10"
   logo: "leyland.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://yonilife.com/shop/"
   category: "Raw Toothbrush"
@@ -489,6 +549,7 @@
   timestamp: "2018-02-11"
   logo: "yoni.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://gpstrackingmadeeasy.com/"
   category: "GPS Tracking"
@@ -497,6 +558,7 @@
   timestamp: "2018-02-13"
   logo: "gpstracking.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://saracarli.com/"
   category: "Art"
@@ -505,6 +567,7 @@
   timestamp: "2018-02-20"
   logo: "none.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.slydev.com.au/Store/"
   category: "E-Shop Nerf Blaster Parts"
@@ -513,6 +576,7 @@
   timestamp: "2018-02-20"
   logo: "sly.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://tedh.co/"
   category: "Merchandises"
@@ -521,6 +585,7 @@
   timestamp: "2018-02-25"
   logo: "tedh.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://faucetcollector.com/"
   category: "Faucet Robots"
@@ -529,6 +594,7 @@
   timestamp: "2018-02-25"
   logo: "none.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://voetbalquizkopen.nl/"
   category: "Soccer Quiz"
@@ -537,6 +603,7 @@
   timestamp: "2018-02-25"
   logo: "none.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://www.calvinwest.co.uk/"
   category: "Music Producer"
@@ -545,6 +612,7 @@
   timestamp: "2018-02-25"
   logo: "calvin.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://vapeclubmy.com/"
   category: "Vape Products"
@@ -553,6 +621,7 @@
   timestamp: "2018-02-26"
   logo: "vapemyclub.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://shop.rom.ac/"
   category: "Art and Comics"
@@ -561,6 +630,7 @@
   timestamp: "2018-03-03"
   logo: "romantically.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://kaizen-sports.de/"
   category: "Sport Socks"
@@ -569,6 +639,7 @@
   timestamp: "2018-03-03"
   logo: "kaizen.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://iinde.com/"
   category: "Marketing & Design Agency"
@@ -577,6 +648,7 @@
   timestamp: "2018-03-06"
   logo: "iinde.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://binarycabin.com/"
   category: "Web Development"
@@ -585,6 +657,7 @@
   timestamp: "2018-03-06"
   logo: "cabin.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://gurupresets.com/"
   category: "Design"
@@ -593,6 +666,7 @@
   timestamp: "2018-03-06"
   logo: "guru.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.wrightdesigns.net"
   category: "Logo Design & Graphic Design"
@@ -601,6 +675,7 @@
   timestamp: "2018-03-06"
   logo: "wright.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://coinspec.net/"
   category: "Hardware Wallets"
@@ -609,6 +684,7 @@
   timestamp: "2018-03-06"
   logo: "coinspec.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://nanothings.store/"
   category: "Nano Merchandises"
@@ -616,7 +692,8 @@
   country: "Worldwide"
   timestamp: "2018-03-06"
   logo: "nanothings.png"
-  discount: ""
+  discount: "10% discount on everything"
+  tags: ""
 -
   websitelink: "https://geckovapesco.com/"
   category: "E-Liquids"
@@ -625,6 +702,7 @@
   timestamp: "2018-03-06"
   logo: "gecko.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://blackblockresearch.com/"
   category: "Crypto Research & Analysis"
@@ -633,6 +711,7 @@
   timestamp: "2018-03-06"
   logo: "none.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://kimjongunocards.com/"
   category: "Card Games"
@@ -641,6 +720,7 @@
   timestamp: "2018-03-06"
   logo: "kimjunguno.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.cutalltheshit.com/"
   category: "Web Hosting"
@@ -649,6 +729,7 @@
   timestamp: "2018-03-06"
   logo: "cutalltheshit.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://canadianbitcoingiftcard.ca/"
   category: "Gift Cards"
@@ -657,6 +738,7 @@
   timestamp: "2018-03-06"
   logo: "none.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://hodlfork.com/"
   category: "Cryptocurrency Pins"
@@ -665,6 +747,7 @@
   timestamp: "2018-03-13"
   logo: "hodlfork.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://betnano.win"
   category: "Lottery"
@@ -673,6 +756,7 @@
   timestamp: "2018-03-13"
   logo: "none.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://www.astralcloudz.com"
   category: "E-Juices"
@@ -681,6 +765,7 @@
   timestamp: "2018-03-13"
   logo: "astral.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://woodlandshades.com/"
   category: "Eco-Friendly Accessories"
@@ -689,6 +774,7 @@
   timestamp: "2018-03-19"
   logo: "woodland.png"
   discount: ""
+  tags: "sunglasses, vegan, bags, wallets, belts, watches"
 -
   websitelink: "https://nanobox.es/"
   category: "Marketplace"
@@ -697,6 +783,7 @@
   timestamp: "2018-03-13"
   logo: "nanobox.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://showroompalais.com"
   category: "Streetwear"
@@ -705,6 +792,7 @@
   timestamp: "2018-03-25"
   logo: "showroom.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://phixies.com/"
   category: "Software / Web Development"
@@ -713,6 +801,7 @@
   timestamp: "2018-03-29"
   logo: "phixies.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://novashop.co/"
   category: "Gifts, Toys & Clothing"
@@ -721,6 +810,7 @@
   timestamp: "2018-04-08"
   logo: "novashop.png"
   discount: ""
+  tags: ""
 -
   websitelink: "http://www.NoltechOutdoors.com"
   category: "Outdoors Equipment"
@@ -729,6 +819,7 @@
   timestamp: "2018-04-12"
   logo: "noltech.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.harborvps.com"
   category: "Web Hosting"
@@ -737,6 +828,7 @@
   timestamp: "2018-04-16"
   logo: "harborvps.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://epicpants.com"
   category: "Apparel and Gaming Hardware"
@@ -745,6 +837,7 @@
   timestamp: "2018-04-22"
   logo: "epicpants.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://opuinteriors.com/"
   category: "Furniture"
@@ -753,6 +846,7 @@
   timestamp: "2018-04-22"
   logo: "opuinteriors.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://betnano.io"
   category: "Gambling"
@@ -761,6 +855,7 @@
   timestamp: "2018-04-29"
   logo: "betnano.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://www.buildadigitalbusiness.com"
   category: "Internet Marketing/SEO"
@@ -769,6 +864,7 @@
   timestamp: "2018-05-06"
   logo: "builddigital.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://siliconlottery.com/"
   category: "AMD and Intel CPUs"
@@ -777,6 +873,7 @@
   timestamp: "2018-05-28"
   logo: "silicon.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://alcoyoung.com"
   category: "Alcohol Gadgets"
@@ -785,6 +882,7 @@
   timestamp: "2018-06-02"
   logo: "alcoyoung.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://fymhotsauce.rocks"
   category: "Hot Sauces"
@@ -793,6 +891,7 @@
   timestamp: "2018-06-05"
   logo: "fymhotsauce.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://ameliorateapparel.com"
   category: "Clothing Brand"
@@ -801,6 +900,7 @@
   timestamp: "2018-06-06"
   logo: "ameliorate.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://reclusivetees.com/"
   category: "Apparels"
@@ -809,6 +909,7 @@
   timestamp: "2018-06-14"
   logo: "reclusivetees.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://store.voluntat.com/pets-water-bottle"
   category: "Dog Water Dispensers"
@@ -817,6 +918,7 @@
   timestamp: "2018-06-14"
   logo: "none.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://clickwebdesign.net"
   category: "Website Creation"
@@ -825,6 +927,7 @@
   timestamp: "2018-06-14"
   logo: "clickweb.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://pvp.me/"
   category: "Betting"
@@ -833,6 +936,7 @@
   timestamp: "2018-06-15"
   logo: "pvp.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://eutrino.com/"
   category: "Marketplace"
@@ -841,6 +945,7 @@
   timestamp: "2018-06-20"
   logo: "none.png"
   discount: ""
+  tags: ""
 -
   websitelink: "https://nanogames.io"
   category: "Gambling"
@@ -849,6 +954,7 @@
   timestamp: "2018-06-21"
   logo: "nanogames.png"
   discount: ""
+  tags: ""
 -
   name: "DasTrucks"
   category: "Truck Parts"
@@ -857,6 +963,7 @@
   websitelink: "http://dastrucks.com/"
   logo: "none.png"
   discount: ""
+  tags: ""
 -
   name: "Put.io"
   category: "Cloud Storage"
@@ -865,6 +972,7 @@
   websitelink: "https://put.io"
   logo: "putio.png"
   discount: ""
+  tags: ""
 -
   name: "Westbourne Books"
   category: "Used Books"
@@ -873,4 +981,5 @@
   websitelink: "https://www.westbournebooks.com/"
   logo: "none.png"
   discount: ""
+  tags: ""
 ...

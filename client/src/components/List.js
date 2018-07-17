@@ -95,7 +95,7 @@ class List extends Component {
             <tr>
               <th onClick={this.sortName} className="merchant">Merchant Name</th>
               <th onClick={this.sortCategory} className="category">Category</th>
-              <th onClick={this.sortDiscount} className="discount">Discount</th>
+              <th onClick={this.sortDiscount} className="discount">Nano Discount</th>
             </tr>
           </thead>
           <tbody>{this.renderEntries()}</tbody>

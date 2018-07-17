@@ -30,7 +30,7 @@ app.get('/db', async (req, res) => {
     if (search !== "undefined") {
       newList = [];
       for (var i = 0; i < doc.length; i++) {
-        if (doc[i].name.toLowerCase().includes(search) || doc[i].category.toLowerCase().includes(search)) {
+        if (doc[i].name.toLowerCase().includes(search) || doc[i].category.toLowerCase().includes(search) || doc[i].tags.toLowerCase().includes(search)) {
           newList.push(doc[i]);
         }
       }
