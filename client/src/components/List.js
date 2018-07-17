@@ -9,11 +9,9 @@ class List extends Component {
 
     this.state = { page: 1 };
 
-    this.goBack = this.goBack.bind(this);
-    this.goForward = this.goForward.bind(this);
     this.sortCategory = this.sortCategory.bind(this);
     this.sortName = this.sortName.bind(this);
-    this.sortLocation = this.sortLocation.bind(this);
+    this.sortDiscount = this.sortDiscount.bind(this);
   }
 
   componentWillReceiveProps()
@@ -83,7 +81,7 @@ class List extends Component {
               <a target="_blank" rel="noopener noreferrer" href={data.websitelink}>{data.name}</a>
             </td>
             <td>{data.category}</td>
-            <td>{data.country}</td>
+            <td>{data.discount}</td>
           </tr>
         );
     }
@@ -97,7 +95,7 @@ class List extends Component {
             <tr>
               <th onClick={this.sortName} className="merchant">Merchant Name</th>
               <th onClick={this.sortCategory} className="category">Category</th>
-              <th onClick={this.sortLocation} className="category">Location</th>
+              <th onClick={this.sortDiscount} className="discount">Discount</th>
             </tr>
           </thead>
           <tbody>{this.renderEntries()}</tbody>
@@ -117,8 +115,8 @@ class List extends Component {
   sortCategory(){
     this.props.doSort("category", this.props.sort, this.props.search, this.props.correctOrder);
   }
-  sortLocation(){
-    this.props.doSort("location", this.props.sort, this.props.search, this.props.correctOrder);
+  sortDiscount(){
+    this.props.doSort("discount", this.props.sort, this.props.search, this.props.correctOrder);
   }
 }
 

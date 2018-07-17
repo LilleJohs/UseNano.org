@@ -10,9 +10,9 @@ export default function(search, newCorrectOrder, sort) {
         keyA = a.category;
         keyB = b.category;
         break;
-      case "location":
-        keyA = a.country;
-        keyB = b.country;
+      case "discount":
+        keyA = a.discount;
+        keyB = b.discount;
         break;
       default:
         keyA = "";

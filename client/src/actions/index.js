@@ -26,13 +26,13 @@ export const doSearch = (searchString) => async dispatch => {
 }
 
 export const doSort = (sort, oldSort, searchData, correctOrder) => async dispatch => {
-  // Sorts alphabetically after sortString which is either 'name', 'category' or 'location' of store.
+  // Sorts alphabetically after sortString which is either 'name', 'category' or 'discount' of store.
   // If it was already sorted after that type, (sortString === oldSortString), then reverse the sort.
 
   const sameSort = sort === oldSort;
   const newCorrectOrder = !sameSort || correctOrder;
 
-  //Sort the data after 'sort' (category, location, name of store)
+  //Sort the data after 'sort' (category, discount, name of store)
   const newSearch = Sort(searchData, newCorrectOrder, sort);
 
   dispatch({
