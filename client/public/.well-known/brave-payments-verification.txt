@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: usenano.org
+Token: d9af32591807f4c6ceb66ca411641a28896eaf965121b791377164c654baba77
