@@ -35,7 +35,7 @@
   country: "USA"
   timestamp: "2018-01-31"
   logo: "rauchroad.png"
-  discount: "40% discount on everything with coupon code 'NANO'"
+  discount: "40% discount with coupon code 'NANO'"
   tags: ""
 -
   websitelink: "https://www.joshjungle.com/"
@@ -152,7 +152,7 @@
   country: "Worldwide"
   timestamp: "2018-01-31"
   logo: "rahstraps.png"
-  discount: "20% on everything"
+  discount: "20% discount"
   tags: ""
 -
   websitelink: "https://www.hitsteps.com/"
@@ -656,7 +656,7 @@
   country: "Worldwide"
   timestamp: "2018-03-06"
   logo: "cabin.png"
-  discount: "10% off"
+  discount: "10% discount"
   tags: "development, custom applications, websites"
 -
   websitelink: "http://gurupresets.com/"
@@ -692,7 +692,7 @@
   country: "Worldwide"
   timestamp: "2018-03-06"
   logo: "nanothings.png"
-  discount: "10% discount on everything"
+  discount: "10% discount"
   tags: ""
 -
   websitelink: "https://geckovapesco.com/"
@@ -990,5 +990,23 @@
   websitelink: "https://nanote.net/"
   logo: "nanote.png"
   discount: ""
+  tags: ""
+-
+  name: "Lokaal.gent"
+  category: "Gifts"
+  country: "Belgium"
+  timestamp: "2018-07-17"
+  websitelink: "https://lokaal.gent/"
+  logo: "lokaalgent.png"
+  discount: ""
+  tags: ""
+-
+  name: "MyMarrakech.ch"
+  category: "Vacation Rentals"
+  country: "Worldwide"
+  timestamp: "2018-07-17"
+  websitelink: "https://www.mymarrakech.ch/"
+  logo: "none.png"
+  discount: "10% discount"
   tags: ""
 ...
