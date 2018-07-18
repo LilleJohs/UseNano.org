@@ -1,2 +1,4 @@
 node_modules
 apiKeys
+.idea
+.DS_Store
