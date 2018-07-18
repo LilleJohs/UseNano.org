@@ -656,8 +656,8 @@
   country: "Worldwide"
   timestamp: "2018-03-06"
   logo: "cabin.png"
-  discount: ""
-  tags: ""
+  discount: "10% off"
+  tags: "development, custom applications, websites"
 -
   websitelink: "http://gurupresets.com/"
   category: "Design"
@@ -980,6 +980,15 @@
   timestamp: "2018-07-17"
   websitelink: "https://www.westbournebooks.com/"
   logo: "none.png"
+  discount: ""
+  tags: ""
+-
+  name: "NaNote"
+  category: "Nano Payment Forms"
+  country: "Worldwide"
+  timestamp: "2018-07-17"
+  websitelink: "https://nanote.net/"
+  logo: "nanote.png"
   discount: ""
   tags: ""
 ...
