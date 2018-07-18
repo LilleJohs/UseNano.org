@@ -7,7 +7,7 @@
 ### UseNano.org
 ---
 
-Usenano.org is a website that lists all merchants that accept Nano as payment.
+[Usenano.org](https://usenano.org) is a website that lists all merchants that accept Nano as payment.
 
 ---
 ### Contributing
