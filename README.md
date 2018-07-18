@@ -15,7 +15,7 @@ Usenano.org is a website that lists all merchants that accept Nano as payment.
 
 If you want to contribute, that's great! We need designers, programmers and everybody that want's us to add a new store.
 
-To add a new store, simple head over to the [Physical Store](https://github.com/LilleJohs/UseNano.org/blob/master/public/physical.yml) or [Online Store](https://github.com/LilleJohs/UseNano.org/blob/master/public/merchants.yml) yaml file and fill in the required information. Make sure that every new listing has all the fields filled out. Put logos in the [Logo](https://github.com/LilleJohs/UseNano.org/tree/master/client/public/logos) folder. If you have no logo for the store, just enter 'none.png' as logo. For website links, remember to add 'http://' or 'https://'.
+To add a new store, simple head over to the [Physical Store](https://github.com/LilleJohs/UseNano.org/blob/master/public/physical.yml) or [Online Store](https://github.com/LilleJohs/UseNano.org/blob/master/public/merchants.yml) yaml file and fill in the required information. Make sure that every new listing has all the fields filled out. Put logos in the [Logo](https://github.com/LilleJohs/UseNano.org/tree/master/client/public/logos) folder. The logos should be 128x128 pixels and preferably .png. If you have no logo for the store, just enter 'none.png' as logo. For website links, remember to add 'http://' or 'https://'.
 
 You can also just send me a message on Reddit [u/LilleJohs](https://www.reddit.com/user/LilleJohs) or send an email to spendnano@gmail.com with the store details.
 
