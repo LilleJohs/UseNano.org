@@ -350,8 +350,8 @@
   country: "Worldwide"
   timestamp: "2018-01-31"
   logo: "ppcprotect.png"
-  discount: ""
-  tags: ""
+  discount: "10% discount"
+  tags: "saas, software, fraud prevention, pay per click, advertising"
 -
   websitelink: "http://xrbnodes.com/"
   category: "RaiBlocks Node Setup"
@@ -369,7 +369,7 @@
   timestamp: "2018-01-31"
   logo: "dreamlandmagic.png"
   discount: ""
-  tags: ""
+  tags: "tricks, cards"
 -
   websitelink: "http://creativedesignlab.co/kayla/"
   category: "Graphic Designer"
@@ -432,7 +432,7 @@
   timestamp: "2018-01-31"
   logo: "snorre.png"
   discount: ""
-  tags: ""
+  tags: "ropelaces, shoelaces, reflective laces, schnürsenkel"
 -
   websitelink: "http://jackstaxback.com"
   category: "Tax Returns"
