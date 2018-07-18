@@ -314,7 +314,7 @@
   country: "USA"
   timestamp: "2018-01-31"
   logo: "tonyseliquid.png"
-  discount: "35% discount excluding shipping on everything with discount code 'nano'"
+  discount: "35% discount excluding shipping with coupon code 'nano'"
   tags: ""
 -
   websitelink: "http://www.fermentationculture.eu/"
