@@ -9,11 +9,11 @@ const app = express();
 
 function wwwRedirect(req, res, next) {
     if (req.headers.host.slice(0, 4) === 'www.') {
-        var newHost = req.headers.host.slice(4);
+        const newHost = req.headers.host.slice(4);
         return res.redirect(301, req.protocol + '://' + newHost + req.originalUrl);
     }
     next();
-};
+}
 
 app.set('trust proxy', true);
 app.use(wwwRedirect);
@@ -22,22 +22,16 @@ app.use(cors());
 app.use(helmet());
 app.use(express.static(path.join(__dirname, 'public')));
 
+const mDoc = yaml.safeLoad(fs.readFileSync("public/merchants.yml", 'utf8'));
+const pDoc = yaml.safeLoad(fs.readFileSync("public/physical.yml", 'utf8'));
+
+const ciSearch = (str, value) => str.toLowerCase().includes(value.toLowerCase());
+
 app.get('/db', async (req, res) => {
   //Send physical store data for front page
   try {
-    var doc = yaml.safeLoad(fs.readFileSync("public/merchants.yml", 'utf8'));
-    var search = req.query.search.toLowerCase();
-    if (search !== "undefined") {
-      newList = [];
-      for (var i = 0; i < doc.length; i++) {
-        if (doc[i].name.toLowerCase().includes(search) || doc[i].category.toLowerCase().includes(search) || doc[i].tags.toLowerCase().includes(search)) {
-          newList.push(doc[i]);
-        }
-      }
-      res.send(newList);
-    } else {
-      res.send(doc);
-    }
+    const s = req.query.search;
+    res.send(!s ? mDoc : mDoc.filter(o => ciSearch(o['name'], s) || ciSearch(o['category'], s) || ciSearch(o['tags'], s)));
   } catch (e) {
     console.log(e);
   }
@@ -46,8 +40,7 @@ app.get('/db', async (req, res) => {
 app.get('/mapdb', async (req, res) => {
   //Send map data
   try {
-    var doc = yaml.safeLoad(fs.readFileSync("public/physical.yml", 'utf8'));
-    res.send(doc);
+    res.send(pDoc);
   } catch (e) {
     console.log(e);
   }
