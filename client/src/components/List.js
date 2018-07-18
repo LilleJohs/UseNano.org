@@ -7,47 +7,52 @@ class List extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { page: 1 };
+    this.state = {
+      page: 1,
+      selected: ""
+    };
 
-    this.sortCategory = this.sortCategory.bind(this);
-    this.sortName = this.sortName.bind(this);
-    this.sortDiscount = this.sortDiscount.bind(this);
+    this.sort = this.sort.bind(this);
   }
 
   componentWillReceiveProps()
   {
-    this.setState({ page: 1 });
+    this.setState({
+      page: 1,
+      selected: ""
+    });
   }
 
-  goBack = () => {
-    this.setState({ page: this.state.page - 1 });
-  };
-
-  goForward = () => {
-    this.setState({ page: this.state.page + 1 });
+  newPage(i){
+    this.setState({
+      page: this.state.page + i,
+      selected: ""
+    });
   };
 
   renderBackButton() {
     if (this.state.page >= 2) {
       return (
         <span className="leftButton">
-          <a onClick={this.goBack} className="pageButton">
+          <a onClick={() => {this.newPage(-1)}} className="pageButton">
             &#8249;
           </a>
         </span>
       );
     }
   }
+
   renderPageNumber() {
     if (this.props.search.length > 50) {
       return <span className="pageNumber">Page {this.state.page} / {Math.ceil(this.props.search.length / 50)}</span>
     }
   }
+
   renderForwardButton() {
     if (this.state.page < Math.ceil(this.props.search.length / 50)) {
       return (
         <span className="rightButton">
-          <a onClick={this.goForward} className="pageButton">
+          <a onClick={() => {this.newPage(1)}} className="pageButton">
             &#8250;
           </a>
         </span>
@@ -55,10 +60,27 @@ class List extends Component {
     }
   }
 
+  renderSelected(data) {
+    // Renders more information about each store if you click on a store
+    return (
+      <tr key={data.name}>
+        <td className="moreInfo" colSpan="4">
+          <div style={{margin: '20px 0px 20px 0px'}}>
+            <p>Service avaliable in or ships to: {data.country}</p>
+            <p>Added: {new Intl.DateTimeFormat('en-GB', {
+                year: 'numeric',
+                month: 'long',
+                day: '2-digit'
+              }).format(new Date(data.timestamp))}</p>
+          </div>
+        </td>
+      </tr>
+    );
+  }
+
   renderEntries() {
     var table = [];
-    var page = this.state.page;
-    var start = (page-1)*50;
+    var start = (this.state.page-1)*50;
     var searchLength = this.props.search.length;
     var end = (start+50 > searchLength) ? searchLength : start + 50;
     for (var i = start; i < end; i++) {
@@ -72,8 +94,9 @@ class List extends Component {
       case null:
         return;
       default:
-        return (
-          <tr key={i}>
+        let table = [(
+          <tr style={{cursor: 'pointer'}} key={i}
+            onClick={() => this.setState(this.state.selected === data.name ? {selected: ""} : {selected: data.name})}>
             <td>
               <a target="_blank" rel="noopener noreferrer" href={data.websitelink} alt={data.name}>
                 <img alt={data.name} src={'logos/' + data.logo} />
@@ -83,7 +106,10 @@ class List extends Component {
             <td>{data.category}</td>
             <td>{data.discount}</td>
           </tr>
-        );
+        )];
+        if (this.state.selected === data.name)
+          table.push(this.renderSelected(data))
+        return table;
     }
   }
 
@@ -93,9 +119,9 @@ class List extends Component {
         <table className="table table-striped table-hover">
           <thead>
             <tr>
-              <th onClick={this.sortName} className="merchant">Merchant Name</th>
-              <th onClick={this.sortCategory} className="category">Category</th>
-              <th onClick={this.sortDiscount} className="discount">Nano Discount</th>
+              <th onClick={() => {this.sort("name")}} className="merchant">Merchant Name</th>
+              <th onClick={() => {this.sort("category")}} className="category">Category</th>
+              <th onClick={() => {this.sort("discount")}} className="discount">Nano Discount</th>
             </tr>
           </thead>
           <tbody>{this.renderEntries()}</tbody>
@@ -109,14 +135,8 @@ class List extends Component {
     );
   }
 
-  sortName(){
-    this.props.doSort("name", this.props.sort, this.props.search, this.props.correctOrder);
-  }
-  sortCategory(){
-    this.props.doSort("category", this.props.sort, this.props.search, this.props.correctOrder);
-  }
-  sortDiscount(){
-    this.props.doSort("discount", this.props.sort, this.props.search, this.props.correctOrder);
+  sort(type){
+    this.props.doSort(type, this.props.sort, this.props.search, this.props.correctOrder);
   }
 }
 
