@@ -13,6 +13,10 @@ class Footer extends Component {
               NanoCashier
             </a>
           </h2>
+          <h4 style={{margin: '30px 0px 30px 0px'}}>
+            Disclaimer: This site does not endorse nor confirm the legitimacy of the stores listed. We try our best to make
+            sure the information is correct and up to date, but there may be errors or inconsistencies.
+          </h4>
         </div>
         <div className="footer py-1 text-center">
           <p>Contact us on <a href="mailto:spendnano@gmail.com">spendnano@gmail.com</a>. See any mistakes or outdated information? Send me an e-mail or make a pull request on <a href="https://github.com/LilleJohs/UseNano.org">Github</a></p>
