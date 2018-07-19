@@ -11,15 +11,6 @@
   discount: ""
   tags: ""
 -
-  websitelink: "https://raigames.io/"
-  category: "Gambling"
-  name: "RaiGames"
-  country: "Worldwide"
-  timestamp: "2018-01-31"
-  logo: "raigames.png"
-  discount: ""
-  tags: ""
--
   websitelink: "https://lacicloud.net/"
   category: "Cloud Storage and Web Hosting"
   name: "LaciCloud"
