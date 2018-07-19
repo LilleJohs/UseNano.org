@@ -1009,4 +1009,13 @@
   logo: "none.png"
   discount: "10% discount"
   tags: ""
+-
+  name: "BrainBlocks Nexus"
+  category: "Marketplace"
+  country: "Worldwide"
+  timestamp: "2018-07-19"
+  websitelink: "https://nexus.brainblocks.io/"
+  logo: "nexus.png"
+  discount: "10% discount"
+  tags: ""
 ...
