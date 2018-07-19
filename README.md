@@ -4,14 +4,14 @@
 </div>
 <hr />
 
-### UseNano.org
----
+## UseNano.org
+
 
 [UseNano.org](https://usenano.org) is a website that lists all merchants that accept Nano as payment.
 
----
+
 ### Contributing
----
+
 
 If you want to contribute, that's great! We need designers, programmers and everybody that want's us to add a new store.
 
@@ -21,7 +21,7 @@ You can also just send me a message on Reddit [u/LilleJohs](https://www.reddit.c
 
 If you want to add a new feature or make a better design for the website, please contact me and we'll discuss it.
 
----
+
 ### Run in development
----
-The website runs with Nodejs on backend and React on front end. To run it locally, download all dependencies on both client side and server side, go to root folder and type 'npm run dev'. Note that you will need to provide your own Google Maps API key to make the map function work.
+
+The website runs with Nodejs on backend and React on front end. To run it locally, download all dependencies on both client side and server side, go to root folder and run the command 'npm run dev' in the root folder. Note that you will need to provide your own Google Maps API key to make the map function work.
