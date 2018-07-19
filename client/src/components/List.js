@@ -101,7 +101,7 @@ class List extends Component {
               <a target="_blank" rel="noopener noreferrer" href={data.websitelink} alt={data.name}>
                 <img alt={data.name} src={'logos/' + data.logo} />
               </a>
-              <a target="_blank" rel="noopener noreferrer" href={data.websitelink}>{data.name}</a>
+              <span> <a target="_blank" rel="noopener noreferrer" href={data.websitelink}>{data.name}</a></span>
             </td>
             <td>{data.category}</td>
             <td>{data.discount}</td>
