@@ -11,15 +11,6 @@
   discount: ""
   tags: ""
 -
-  websitelink: "https://raigames.io/"
-  category: "Gambling"
-  name: "RaiGames"
-  country: "Worldwide"
-  timestamp: "2018-01-31"
-  logo: "raigames.png"
-  discount: ""
-  tags: ""
--
   websitelink: "https://lacicloud.net/"
   category: "Cloud Storage and Web Hosting"
   name: "LaciCloud"
@@ -1017,5 +1008,14 @@
   websitelink: "https://nexus.brainblocks.io/"
   logo: "nexus.png"
   discount: "10% discount"
+  tags: ""
+-
+  name: "Argenetum"
+  category: "Relationship Advice"
+  country: "Worldwide"
+  timestamp: "2018-07-19"
+  websitelink: "https://www.argenetum.com"
+  logo: "none.png"
+  discount: ""
   tags: ""
 ...
