@@ -98,3 +98,23 @@ tr img {
    background-color: #ffffff;
 }
 
+.logo-link {
+  padding: 1rem;
+  display: block;
+}
+
+.logo-link > .logo {
+  width: 5rem;
+}
+
+@media only screen and (min-width: 768px){
+  .logo-link {
+    display: inline;
+  }
+  .logo-link > .logo {
+    width: 8%;
+  }
+  .company-name {
+    display: inline;
+  }
+}
