@@ -1018,4 +1018,13 @@
   logo: "none.png"
   discount: ""
   tags: ""
+-
+  name: "Allin.bet"
+  category: "Poker"
+  country: "Worldwide"
+  timestamp: "2018-07-24"
+  websitelink: "https://www.allin.bet"
+  logo: "allinbet.png"
+  discount: ""
+  tags: "gambling, freeroll, bankroll"
 ...
