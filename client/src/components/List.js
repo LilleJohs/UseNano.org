@@ -98,10 +98,10 @@ class List extends Component {
           <tr style={{cursor: 'pointer'}} key={i}
             onClick={() => this.setState(this.state.selected === data.name ? {selected: ""} : {selected: data.name})}>
             <td>
-              <a target="_blank" rel="noopener noreferrer" href={data.websitelink} alt={data.name}>
-                <img alt={data.name} src={'logos/' + data.logo} />
+              <a className="logo-link" target="_blank" rel="noopener noreferrer" href={data.websitelink} alt={data.name}>
+                <img alt={data.name} className="logo" src={'logos/' + data.logo} />
               </a>
-              <span> <a target="_blank" rel="noopener noreferrer" href={data.websitelink}>{data.name}</a></span>
+              <span className="company-name"> <a className="name" target="_blank" rel="noopener noreferrer" href={data.websitelink}>{data.name}</a></span>
             </td>
             <td>{data.category}</td>
             <td>{data.discount}</td>
