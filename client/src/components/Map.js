@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
+import React, { Component } from 'react';
+import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import axios from 'axios';
 
 
@@ -14,8 +14,8 @@ export default class MapContainer extends Component {
       selectedPlace: {}
     };
   }
-  
-  
+
+
   updateDimensions() {
     const height = window.innerHeight - 65;
     this.setState({ height: height })
@@ -35,11 +35,11 @@ export default class MapContainer extends Component {
     } else {
       baseURL = 'http://localhost:5000/mapdb';
     }
-    
+
     window.addEventListener("resize", this.updateDimensions.bind(this));
-    
+
     const leafletMap = this.leafletMap.leafletElement;
-    
+
     leafletMap.locate({setView: true, maxZoom: 7});
 
     axios.get(baseURL).then(res => {
@@ -57,7 +57,7 @@ export default class MapContainer extends Component {
       </Marker>
     );
   }
-  
+
   renderAll() {
     let table = [];
     let { stores } = this.state;
@@ -67,7 +67,7 @@ export default class MapContainer extends Component {
     return table;
   }
 
-  
+
   render() {
     const position = {lat: 0, lng: 0};
     return (
