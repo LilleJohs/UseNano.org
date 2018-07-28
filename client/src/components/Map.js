@@ -15,7 +15,6 @@ export default class MapContainer extends Component {
     };
   }
 
-
   updateDimensions() {
     const height = window.innerHeight - 65;
     this.setState({ height: height })
@@ -37,10 +36,6 @@ export default class MapContainer extends Component {
     }
 
     window.addEventListener("resize", this.updateDimensions.bind(this));
-
-    const leafletMap = this.leafletMap.leafletElement;
-
-    leafletMap.locate({setView: true, maxZoom: 7});
 
     axios.get(baseURL).then(res => {
       this.setState({ stores: res.data });
@@ -67,9 +62,8 @@ export default class MapContainer extends Component {
     return table;
   }
 
-
   render() {
-    const position = {lat: 0, lng: 0};
+    const position = {lat: 25, lng: 0};
     return (
       <Map ref={m => { this.leafletMap = m; }} center={position} zoom={2}  style={{ height: this.state.height}}>
         <TileLayer
