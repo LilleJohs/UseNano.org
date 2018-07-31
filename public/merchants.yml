@@ -903,12 +903,12 @@
   tags: ""
 -
   name: "Put.io"
-  category: "Cloud Storage"
+  category: "Cloud Storage and Torrent Client"
   country: "Worldwide"
   timestamp: "2018-07-13"
   websitelink: "https://put.io"
   logo: "putio.png"
-  discount: ""
+  discount: "20% discount"
   tags: ""
 -
   name: "Westbourne Books"
