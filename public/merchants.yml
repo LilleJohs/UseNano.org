@@ -973,4 +973,13 @@
   logo: "allinbet.png"
   discount: ""
   tags: "gambling, freeroll, bankroll"
+-
+  websitelink: "https://rauchroad.com/"
+  category: "Sunglasses"
+  name: "RauchRoad"
+  country: "USA"
+  timestamp: "2018-01-31"
+  logo: "rauchroad.png"
+  discount: "40% discount with coupon code 'NANO'"
+  tags: ""
 ...
