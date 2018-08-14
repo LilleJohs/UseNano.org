@@ -973,4 +973,13 @@
   logo: "rauchroad.png"
   discount: "40% discount with coupon code 'NANO'"
   tags: ""
+-
+  websitelink: "https://www.textees.io/"
+  category: "Merchandising Service"
+  name: "Textees.io"
+  country: "Worldwide"
+  timestamp: "2018-08-14"
+  logo: "none.png"
+  discount: ""
+  tags: "Influencer, Merchandise, Print on Demand, Apparel, Branding"
 ...
