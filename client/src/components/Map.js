@@ -45,10 +45,12 @@ export default class MapContainer extends Component {
   renderOne(store, i) {
     return (
       <Marker key={i} position={{lat: store.lat, lng: store.lng}}>
-		<Popup style={{margin: '0'}}>
-				<h3>{store.name}</h3>
-				<h4>{store.category}</h4>
-				<h4><a href={store.website}>{store.website}</a></h4></Popup>
+		    <Popup style={{margin: '0'}}>
+  				<h3>{store.name}</h3>
+  				<h4>{store.category}</h4>
+  				<h4><a href={store.website}>{store.website}</a></h4>
+          <h4>{store.discount}</h4>
+        </Popup>
       </Marker>
     );
   }

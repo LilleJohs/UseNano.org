@@ -8,6 +8,7 @@
   lng: 10.4400
   timestamp: "2018-01-31"
   website: "https://wildundfrei-headshop.de/"
+  discount: ""
 -
   name: "Wild und Frei"
   category: "Head Shop"
@@ -15,6 +16,7 @@
   lng: 6.940641
   timestamp: "2018-01-31"
   website: "https://wildundfrei-headshop.de/"
+  discount: ""
 -
   name: "Ojeda, Andrade e Amaral Advogados"
   category: "Advocacia"
@@ -22,6 +24,7 @@
   lng: -46.571278
   timestamp: "2018-03-27"
   website: ""
+  discount: ""
 -
   name: "Interise Legal"
   category: "Australie Legal Services"
@@ -29,6 +32,7 @@
   lng: 144.960302
   timestamp: "2018-04-02"
   website: ""
+  discount: ""
 -
   name: "COMPUTER REPAIR Las Vegas, INC"
   category: "Laptop / Desktop Repair"
@@ -36,6 +40,7 @@
   lng: -115.133562
   timestamp: "2018-04-06"
   website: "https://crlv.com/"
+  discount: ""
 -
   name: "Anarco Tatuaria"
   category: "Tattoo Studio"
@@ -43,6 +48,7 @@
   lng: -46.573967
   timestamp: "2018-06-01"
   website: "http://anarcotatuaria.com.br"
+  discount: ""
 -
   name: "LTD Tennis Academy"
   category: "Sport Coaching"
@@ -50,3 +56,12 @@
   lng: 18.644777
   timestamp: "2018-06-23"
   website: "http://www.ltdtennis.co.za"
+  discount: ""
+-
+  name: "Bendigo Radiators"
+  category: "Automotive Parts & Service"
+  lat: -36.781361
+  lng: 144.261719
+  timestamp: "2018-08-21"
+  website: "https://www.bendigoradiators.com/"
+  discount: "10% discount"
