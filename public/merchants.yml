@@ -1000,4 +1000,13 @@
   logo: "bitcoinsuper.png"
   discount: ""
   tags: ""
+-
+  websitelink: "https://nanotwit.ch"
+  category: "Twitch Donations"
+  name: "Nano Twitch"
+  country: "Worldwide"
+  timestamp: "2018-08-25"
+  logo: "nanotwitch.png"
+  discount: ""
+  tags: "twitch, donations, streaming"
 ...
