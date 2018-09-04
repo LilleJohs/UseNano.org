@@ -1027,4 +1027,13 @@
   logo: "none.png"
   discount: "20% discount"
   tags: "Vape Juice, Art, E-Cigarettes, Lanyards"
+-
+  websitelink: "https://www.amall.co/en/"
+  category: "Apparels"
+  name: "Amall.co"
+  country: "Hong Kong, Taiwan, Macau"
+  timestamp: "2018-09-04"
+  logo: "amallco.png"
+  discount: "60% discount"
+  tags: "Apparels, Electronics, Consumers goods, Shopping Mall"
 ...
