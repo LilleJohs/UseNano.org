@@ -65,3 +65,11 @@
   timestamp: "2018-08-21"
   website: "https://www.bendigoradiators.com/"
   discount: "10% discount"
+-
+  name: "House of Nakamoto"
+  category: "Cryptocurrency Store/Broker"
+  lat: 48.204780
+  lng: 16.370550
+  timestamp: "2018-09-11"
+  website: "http://www.thehouseofnakamoto.com/de"
+  discount: ""
