@@ -1036,4 +1036,13 @@
   logo: "amallco.png"
   discount: "60% discount"
   tags: "Apparels, Electronics, Consumers goods, Shopping Mall"
+-
+  websitelink: "https://meridian-connection.com.au/"
+  category: "Tai Chi Services"
+  name: "Meridian Connection"
+  country: "Worldwide"
+  timestamp: "2018-10-03"
+  logo: "meridian.png"
+  discount: ""
+  tags: "Tai Chi"
 ...
