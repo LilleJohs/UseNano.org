@@ -1045,4 +1045,13 @@
   logo: "meridian.png"
   discount: ""
   tags: "Tai Chi"
+-
+  websitelink: "https://risingsunrecords.shop"
+  category: "Vintage Vinyl Records"
+  name: "Rising Sun Records"
+  country: "Worldwide"
+  timestamp: "2018-10-04"
+  logo: "risingsun.png"
+  discount: ""
+  tags: "vinyl, records"
 ...
