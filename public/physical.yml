@@ -73,3 +73,11 @@
   timestamp: "2018-09-11"
   website: "http://www.thehouseofnakamoto.com/de"
   discount: ""
+-
+  name: "Hair Care Studio Angelika"
+  category: "Hairdresser's Salon"
+  lat: 51.373500
+  lng: 6.170280
+  timestamp: "2018-10-22"
+  website: ""
+  discount: "10% discount"
