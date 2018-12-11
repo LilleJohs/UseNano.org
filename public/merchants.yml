@@ -1081,4 +1081,13 @@
   logo: "yiippee.png"
   discount: ""
   tags: "yiippee, squishy toys, squishies, tokidoki, ibloom, punimaru, vlampo"
+-
+  websitelink: "https://sc.dog/"
+  category: "Encryption Services"
+  name: "SuperCryptoDog"
+  country: "Worldwide"
+  timestamp: "2018-12-11"
+  logo: "sc.png"
+  discount: ""
+  tags: "Encryption, password manager, text transfer"
 ...
