@@ -2,15 +2,6 @@
 ---
 # UseNano.onlineStores
 -
-  websitelink: "https://www.madebydocs.com/"
-  category: "Toothpaste"
-  name: "Made by Docs"
-  country: "Worldwide"
-  timestamp: "2018-01-31"
-  logo: "madebydocs.png"
-  discount: ""
-  tags: ""
--
   websitelink: "https://lacicloud.net/"
   category: "Cloud Storage and Web Hosting"
   name: "LaciCloud"
@@ -80,15 +71,6 @@
   country: "USA"
   timestamp: "2018-01-31"
   logo: "headphones.png"
-  discount: ""
-  tags: ""
--
-  websitelink: "https://www.robandlizzie.com/"
-  category: "Wedding Photography"
-  name: "Rob and Lizzie"
-  country: "Worldwide"
-  timestamp: "2018-01-31"
-  logo: "robandlizzie.png"
   discount: ""
   tags: ""
 -
@@ -335,15 +317,6 @@
   discount: ""
   tags: "tricks, cards"
 -
-  websitelink: "http://creativedesignlab.co/kayla/"
-  category: "Graphic Designer"
-  name: "Kayla Lauren"
-  country: "Worldwide"
-  timestamp: "2018-01-31"
-  logo: "kaylalauren.png"
-  discount: ""
-  tags: ""
--
   websitelink: "https://thecopperhat.ca/"
   category: "Traditional Shaving and Beard Supplies"
   name: "The Copper Hat"
@@ -388,15 +361,6 @@
   logo: "sekerkatomas.png"
   discount: ""
   tags: ""
--
-  websitelink: "https://www.snorre-laces.com/"
-  category: "Shoelaces"
-  name: "Snorre Laces"
-  country: "Germany"
-  timestamp: "2018-01-31"
-  logo: "snorre.png"
-  discount: ""
-  tags: "ropelaces, shoelaces, reflective laces, schnürsenkel"
 -
   websitelink: "http://jackstaxback.com"
   category: "Tax Returns"
@@ -776,24 +740,6 @@
   discount: ""
   tags: ""
 -
-  websitelink: "https://opuinteriors.com/"
-  category: "Furniture"
-  name: "OPUINTERIORS"
-  country: "Worldwide"
-  timestamp: "2018-04-22"
-  logo: "opuinteriors.png"
-  discount: ""
-  tags: ""
--
-  websitelink: "https://betnano.io"
-  category: "Gambling"
-  name: "BetNano"
-  country: "Worldwide"
-  timestamp: "2018-04-29"
-  logo: "betnano.png"
-  discount: ""
-  tags: ""
--
   websitelink: "https://www.buildadigitalbusiness.com"
   category: "Internet Marketing/SEO"
   name: "Build A Digital Business"
@@ -902,15 +848,6 @@
   discount: "20% discount"
   tags: ""
 -
-  name: "Westbourne Books"
-  category: "Used Books"
-  country: "United States"
-  timestamp: "2018-07-17"
-  websitelink: "https://www.westbournebooks.com/"
-  logo: "none.png"
-  discount: ""
-  tags: ""
--
   name: "NaNote"
   category: "Nano Payment Forms"
   country: "Worldwide"
@@ -964,15 +901,6 @@
   logo: "rauchroad.png"
   discount: "40% discount with coupon code 'NANO'"
   tags: ""
--
-  websitelink: "https://www.textees.io/"
-  category: "Merchandising Service"
-  name: "Textees.io"
-  country: "Worldwide"
-  timestamp: "2018-08-14"
-  logo: "none.png"
-  discount: ""
-  tags: "Influencer, Merchandise, Print on Demand, Apparel, Branding"
 -
   websitelink: "http://excellentbeautie.com/"
   category: "Health Beauty Products"
@@ -1090,4 +1018,13 @@
   logo: "sc.png"
   discount: ""
   tags: "Encryption, password manager, text transfer"
+-
+  websitelink: "https://www.lumacards.co.uk"
+  category: "Greeting Cards"
+  name: "LumaCards"
+  country: "Worldwide"
+  timestamp: "2018-12-17"
+  logo: "lumacards.png"
+  discount: "3% discount"
+  tags: "luma, cards, greeting, cards"
 ...
