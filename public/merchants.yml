@@ -1072,4 +1072,22 @@
   logo: "cryptocards.png"
   discount: ""
   tags: "poker blackjack playing cards crypto-themed "
+-
+  websitelink: "https://www.cryptocurrencyposters.com/"
+  category: "Cryptocurrency Merchandise"
+  name: "Cryptocurrency Posters"
+  country: "Worldwide"
+  timestamp: "2018-01-04"
+  logo: "cryptoposters.png"
+  discount: "10% discount"
+  tags: "posters, merchandise, mugs, hats, hoodies, sweatshirts, socks"
+-
+  websitelink: "https://artbyfoxi.com/"
+  category: "Fine Art and Prints"
+  name: "Art by Foxi"
+  country: "Worldwide"
+  timestamp: "2018-01-04"
+  logo: "foxi.png"
+  discount: ""
+  tags: "art, fine art, contemporary art"
 ...
