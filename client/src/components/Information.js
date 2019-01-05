@@ -8,9 +8,10 @@ class Information extends Component {
           <h1>Join the Nano Revolution!</h1>
         </div>
         <div className="card-body">
-          <h3 className="nanolist">This website lists all merchants that accept Nano as payment.</h3>
+          <h3 className="nanolist">This website lists all known merchants that accept Nano as payment.</h3>
           <div className="whatisnano">
-            <h4>{"Don't"} know what Nano is? Visit the <a
+            <h4>Nano is a feeless and extremely fast cryptocurrency. Check out the speed yourself <a href="http://nanospeed.live" target="_blank" rel="noopener noreferrer" class="btn-nanospeed-live btn-nanospeed-live-lg">Speed Test Nano <span role="img" aria-label="Timer">&#9200;</span></a></h4>
+            <h4>Want to learn more about Nano? Visit the <a
               className = "link" target="_blank" rel="noopener noreferrer" href="https://www.nano.org">
                 Official Nano Website
               </a> and the <a
