@@ -81,3 +81,11 @@
   timestamp: "2018-10-22"
   website: ""
   discount: "10% discount"
+-
+  name: "GS Powerflush"
+  category: "Car Maintenance"
+  lat: 51.651710
+  lng: 5.644230
+  timestamp: "2019-02-08"
+  website: "https://www.powerflush.nl"
+  discount: ""
