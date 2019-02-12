@@ -34,7 +34,7 @@ class List extends Component {
     if (this.state.page >= 2) {
       return (
         <span className="leftButton">
-          <a href="" onClick={() => {this.newPage(-1)}} className="pageButton">
+          <a onClick={() => {this.newPage(-1)}} className="pageButton">
             &#8249;
           </a>
         </span>
@@ -52,7 +52,7 @@ class List extends Component {
     if (this.state.page < Math.ceil(this.props.search.length / 50)) {
       return (
         <span className="rightButton">
-          <a href="" onClick={() => {this.newPage(1)}} className="pageButton">
+          <a onClick={() => {this.newPage(1)}} className="pageButton">
             &#8250;
           </a>
         </span>
