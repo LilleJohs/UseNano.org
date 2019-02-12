@@ -27,7 +27,7 @@ class Header extends Component {
       <nav className="nav navbar navbar-default navbar-fixed-top">
         <div className="container-fluid">
           <span className="navbar-item navbar-left">
-            <a>
+            <a href="/">
           	 <img alt="" src="usenanologo.png"/>
             </a>
           </span>
