@@ -1090,4 +1090,22 @@
   logo: "foxi.png"
   discount: ""
   tags: "art, fine art, contemporary art"
+-
+  websitelink: "https://beecofriendly.ca"
+  category: "Eco-Friendly Merchandises"
+  name: "Be Eco-Friendly"
+  country: "Worldwide"
+  timestamp: "2018-03-16"
+  logo: "none.png"
+  discount: "5% cashback in Nano"
+  tags: ""
+-
+  websitelink: "https://EauxCBD.com"
+  category: "CBD"
+  name: "EAUX CBD"
+  country: "United States"
+  timestamp: "2018-03-28"
+  logo: "none.png"
+  discount: ""
+  tags: "CBD, hemp, health, supplements, tinctures"
 ...
