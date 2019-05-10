@@ -89,3 +89,11 @@
   timestamp: "2019-02-08"
   website: "https://www.powerflush.nl"
   discount: ""
+-
+  name: "OFFIC3 COWORKING"
+  category: "Coworking"
+  lat: -23.521550
+  lng: -46.190950
+  timestamp: "2019-05-09"
+  website: "https://www.offic3.com.br"
+  discount: "10% discount"
