@@ -97,3 +97,11 @@
   timestamp: "2019-05-09"
   website: "https://www.offic3.com.br"
   discount: "10% discount"
+-
+  name: "Seymour Locksmiths"
+  category: "Locksmiths"
+  lat: 50.835680
+  lng: -0.280960
+  timestamp: "2019-06-11"
+  website: "https://seymour-locksmiths.co.uk/"
+  discount: ""

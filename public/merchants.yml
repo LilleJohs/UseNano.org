@@ -1126,4 +1126,13 @@
   logo: "tcweb.png"
   discount: "5% discount"
   tags: "Web Design, Digital Marketing, SEO, Google Ads, PPC Management"
+-
+  websitelink: "http://rhinobob.com/"
+  category: "Graphic Design Studio"
+  name: "rhinobob"
+  country: "Worldwide"
+  timestamp: "2019-05-30"
+  logo: "rhinobob.png"
+  discount: "5% discount"
+  tags: "rhinobob"
 ...
