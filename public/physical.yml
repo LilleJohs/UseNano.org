@@ -105,3 +105,28 @@
   timestamp: "2019-06-11"
   website: "https://seymour-locksmiths.co.uk/"
   discount: ""
+-
+  name: "Affy's Premium Grill"
+  category: "Steakhouse"
+  lat: 40.610889
+  lng: -73.962306
+  timestamp: "2019-06-24"
+  website: "https://www.affyspremiumgrill.com/"
+  discount: "Free Chocolate Brownie"
+-
+  name: "Tapioca Peneira e Frigideira"
+  category: "Food"
+  lat: -27.819895
+  lng: -50.321503
+  timestamp: "2019-06-22"
+  website: "https://www.facebook.com/tapiocapeneiraefrigideira/"
+  discount: "10% discount"
+-
+  name: "Tapioca Peneira e Frigideira"
+  category: "Food"
+  lat: -27.819895
+  lng: -50.321503
+  timestamp: "2019-06-22"
+  website: "https://www.facebook.com/tapiocapeneiraefrigideira/"
+  discount: "10% discount"
+...

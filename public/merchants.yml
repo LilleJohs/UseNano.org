@@ -1135,4 +1135,22 @@
   logo: "rhinobob.png"
   discount: "5% discount"
   tags: "rhinobob"
+-
+  websitelink: "https://www.pita.es"
+  category: "Handmade Mechanical Watches"
+  name: "Pita Barcelona"
+  country: "Worldwide"
+  timestamp: "2019-06-12"
+  logo: "pitabarcelona.png"
+  discount: "5% discount"
+  tags: "handmade, mechanical, watches, timepieces, ahci, independent, ahci"
+-
+  websitelink: "https://gosunset.com.br"
+  category: "T-Shirts"
+  name: "GoSunset"
+  country: "Brasil"
+  timestamp: "2019-06-25"
+  logo: "none.png"
+  discount: "10% discount"
+  tags: "Eletronic, Music, Rave, Tshirt, Custom"
 ...
