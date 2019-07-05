@@ -12,7 +12,7 @@ function httpsRedirect(req, res, next) {
   if(req.headers["x-forwarded-proto"] === "https"){
     return next();
   };
-  res.redirect('https://' + req.hostname + req.url);
+  res.redirect(301, 'https://' + req.hostname + req.url);
 }
 
 app.set('trust proxy', true);
