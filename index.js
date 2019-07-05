@@ -7,16 +7,15 @@ const helmet = require('helmet');
 
 const app = express();
 
-function wwwRedirect(req, res, next) {
-    if (req.headers.host.slice(0, 4) === 'www.') {
-        const newHost = req.headers.host.slice(4);
-        return res.redirect(301, req.protocol + '://' + newHost + req.originalUrl);
-    }
-    next();
+function httpsRedirect(req, res, next) {
+  // Redirect to https
+  if(req.headers["x-forwarded-proto"] === "https"){
+    return next();
+  };
+  res.redirect('https://' + req.hostname + req.url);
 }
 
 app.set('trust proxy', true);
-app.use(wwwRedirect);
 
 app.use(cors());
 app.use(helmet());
@@ -47,6 +46,7 @@ app.get('/mapdb', async (req, res) => {
 });
 
 if (process.env.NODE_ENV === 'production') {
+  app.use(httpsRedirect);
   app.use(express.static('client/build'));
 
   app.get('*', (req, res) => {
