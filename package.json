@@ -17,15 +17,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^4.1.1",
+    "concurrently": "^4.1.2",
     "cors": "^2.8.4",
     "express": "^4.17.1",
     "file": "^0.2.2",
     "fs": "0.0.1-security",
-    "helmet": "^3.18.0",
+    "helmet": "^3.20.0",
     "js-yaml": "^3.13.1",
     "nodemon": "^1.19.1",
     "path": "^0.12.7",
-    "react": "^16.8.6"
+    "react": "^16.9.0"
   }
 }
