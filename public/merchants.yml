@@ -614,15 +614,6 @@
   discount: ""
   tags: ""
 -
-  websitelink: "https://woodlandshades.com/"
-  category: "Eco-Friendly Accessories"
-  name: "Woodland Shades"
-  country: "USA"
-  timestamp: "2018-03-19"
-  logo: "woodland.png"
-  discount: ""
-  tags: "sunglasses, vegan, bags, wallets, belts, watches"
--
   websitelink: "http://showroompalais.com"
   category: "Streetwear"
   name: "Showroom Palais"
@@ -674,15 +665,6 @@
   country: "Worldwide"
   timestamp: "2018-04-22"
   logo: "epicpants.png"
-  discount: ""
-  tags: ""
--
-  websitelink: "https://www.buildadigitalbusiness.com"
-  category: "Internet Marketing/SEO"
-  name: "Build A Digital Business"
-  country: "Worldwide"
-  timestamp: "2018-05-06"
-  logo: "builddigital.png"
   discount: ""
   tags: ""
 -
@@ -866,15 +848,6 @@
   discount: "10% discount for three months of service"
   tags: "Digital Marketing, Marketing Agency, PPC Company, SEO Services"
 -
-  websitelink: "https://www.cctgoods.com/"
-  category: "Vape Juice"
-  name: "CCTGOODS"
-  country: "USA"
-  timestamp: "2018-09-03"
-  logo: "none.png"
-  discount: "20% discount"
-  tags: "Vape Juice, Art, E-Cigarettes, Lanyards"
--
   websitelink: "https://www.amall.co/en/"
   category: "Apparels"
   name: "Amall.co"
@@ -901,15 +874,6 @@
   logo: "risingsun.png"
   discount: ""
   tags: "vinyl, records"
--
-  websitelink: "https://shop.nano-node.space"
-  category: "NANO-themed merchandise"
-  name: "Nightshade's NANO Shop"
-  country: "Worldwide"
-  timestamp: "2018-10-22"
-  logo: "none.png"
-  discount: ""
-  tags: "NANO Wristband, Cryptocurrency Wristband, NANO bracelet, Pay with BrainBlocks"
 -
   websitelink: "https://ogdolo.com"
   category: "Cryptocurrency Aliases"
@@ -946,15 +910,6 @@
   logo: "sc.png"
   discount: ""
   tags: "Encryption, password manager, text transfer"
--
-  websitelink: "https://www.lumacards.co.uk"
-  category: "Greeting Cards"
-  name: "LumaCards"
-  country: "Worldwide"
-  timestamp: "2018-12-17"
-  logo: "lumacards.png"
-  discount: "3% discount"
-  tags: "luma, cards, greeting, cards"
 -
   websitelink: "https://www.tracking-system.com/"
   category: "Fleet Management"
@@ -1190,3 +1145,5 @@
   discount: ""
   tags: "Mid century vintage danish teak retro"
 ...
+000 https://emereald.digital/digital-payment/
+000 https://www.cctgoods.com/
