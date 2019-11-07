@@ -695,15 +695,6 @@
   discount: "10% discount"
   tags: ""
 -
-  name: "Allin.bet"
-  category: "Poker"
-  country: "Worldwide"
-  timestamp: "2018-07-24"
-  websitelink: "https://www.allin.bet"
-  logo: "allinbet.png"
-  discount: ""
-  tags: "gambling, freeroll, bankroll"
--
   websitelink: "https://rauchroad.com/"
   category: "Sunglasses"
   name: "RauchRoad"
@@ -866,15 +857,6 @@
   discount: "10% discount"
   tags: "posters, merchandise, mugs, hats, hoodies, sweatshirts, socks"
 -
-  websitelink: "https://artbyfoxi.com/"
-  category: "Fine Art and Prints"
-  name: "Art by Foxi"
-  country: "Worldwide"
-  timestamp: "2019-01-04"
-  logo: "foxi.png"
-  discount: ""
-  tags: "art, fine art, contemporary art"
--
   websitelink: "https://beecofriendly.ca"
   category: "Eco-Friendly Merchandises"
   name: "Be Eco-Friendly"
@@ -901,15 +883,6 @@
   logo: "tedprinted.png"
   discount: ""
   tags: "Apparels, Home, Kitchen, Clothes, Hats"
--
-  websitelink: "https://www.bristolbud.buzz"
-  category: "CBD"
-  name: "Bristol Bud"
-  country: "UK"
-  timestamp: "2019-04-23"
-  logo: "none.png"
-  discount: ""
-  tags: "Cbd, hemp, hemp flower"
 -
   websitelink: "https://www.thcservers.com"
   category: "Web Hosting"
