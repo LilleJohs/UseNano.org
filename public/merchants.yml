@@ -830,15 +830,6 @@
   discount: "10% discount"
   tags: "posters, merchandise, mugs, hats, hoodies, sweatshirts, socks"
 -
-  websitelink: "https://beecofriendly.ca"
-  category: "Eco-Friendly Merchandises"
-  name: "Be Eco-Friendly"
-  country: "Worldwide"
-  timestamp: "2019-03-16"
-  logo: "none.png"
-  discount: "5% cashback in Nano"
-  tags: ""
--
   websitelink: "https://EauxCBD.com"
   category: "CBD"
   name: "EAUX CBD"
@@ -1000,4 +991,13 @@
   logo: "heliomotion.png"
   discount: "5% discount"
   tags: "home solar energy power plant"
+-
+  websitelink: "https://playalondon.com/"
+  category: "Apparel"
+  name: "Playa London"
+  country: "Worldwide"
+  timestamp: "2019-11-08"
+  logo: "playa.png"
+  discount: ""
+  tags: "anti-plastic, shirt"
 ...
