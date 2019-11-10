@@ -6,7 +6,8 @@ import Header from './Header';
 import Information from './Information';
 import Footer from './Footer';
 import Map from './Map';
-
+import OnlineStore from './OnlineStore';
+import ApproveStore from './ApproveStore';
 
 export default class App extends Component {
   render() {
@@ -14,12 +15,15 @@ export default class App extends Component {
       <div>
         <BrowserRouter>
           <div>
-            <Route path="/" component={Header}/>
-            <Route exact path="/" component={Information}/>
-            <Route exact path="/" component={SearchBar}/>
-            <Route exact path="/" component={List}/>
-            <Route exact path="/" component={Footer}/>
-            <Route path="/map" component={Map}/>
+            <Route path="/" component={Header} />
+            <Route exact path="/" component={Information} />
+            <Route exact path="/" component={SearchBar} />
+            <Route exact path="/" component={List} />
+            <Route exact path="/" component={Footer} />
+            <Route path="/map" component={Map} />
+            <Route path="/online" component={OnlineStore} />
+            <Route path="/online" component={Footer} />
+            <Route path="/approveStore" component={ApproveStore} />
           </div>
         </BrowserRouter>
       </div>

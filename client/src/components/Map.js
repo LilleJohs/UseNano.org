@@ -6,12 +6,13 @@ import axios from 'axios';
 export default class MapContainer extends Component {
   constructor(props) {
     super(props);
-
+    const height = window.innerHeight - 65;
     this.state = {
       stores: [],
       showingInfoWindow: false,
       activeMarker: {},
-      selectedPlace: {}
+      selectedPlace: {},
+      height: height
     };
   }
 
@@ -20,13 +21,10 @@ export default class MapContainer extends Component {
     this.setState({ height: height })
   }
 
-  componentWillMount() {
-    this.updateDimensions()
-  }
-
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateDimensions.bind(this))
   }
+
   componentDidMount() {
     let baseURL;
     if (process.env.NODE_ENV === 'production') {
@@ -44,11 +42,11 @@ export default class MapContainer extends Component {
 
   renderOne(store, i) {
     return (
-      <Marker key={i} position={{lat: store.lat, lng: store.lng}}>
-		    <Popup style={{margin: '0'}}>
-  				<h3>{store.name}</h3>
-  				<h4>{store.category}</h4>
-  				<h4><a href={store.website}>{store.website}</a></h4>
+      <Marker key={i} position={{ lat: store.lat, lng: store.lng }}>
+        <Popup style={{ margin: '0' }}>
+          <h3>{store.name}</h3>
+          <h4>{store.category}</h4>
+          <h4><a href={store.website}>{store.website}</a></h4>
           <h4>{store.discount}</h4>
         </Popup>
       </Marker>
@@ -65,9 +63,9 @@ export default class MapContainer extends Component {
   }
 
   render() {
-    const position = {lat: 25, lng: 0};
+    const position = { lat: 25, lng: 0 };
     return (
-      <Map ref={m => { this.leafletMap = m; }} center={position} zoom={2}  style={{ height: this.state.height}}>
+      <Map ref={m => { this.leafletMap = m; }} center={position} zoom={2} style={{ height: this.state.height }}>
         <TileLayer
           attribution='Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
           url="https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoiamlpa3V5IiwiYSI6ImNqazE3amtlYzBhbWQzd2xleHNicWp3bXgifQ.yzR_F6OSDRflAc52jhi3Nw"
