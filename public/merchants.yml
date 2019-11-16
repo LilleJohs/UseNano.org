@@ -998,6 +998,15 @@
   country: "Worldwide"
   timestamp: "2019-11-08"
   logo: "playa.png"
-  discount: ""
+  discount: "10% discount with coupon code 'Nano10'"
   tags: "anti-plastic, shirt"
+-
+  websitelink: "https://relianx.com"
+  category: "Web Hosting"
+  name: "Relianx"
+  country: "Worldwide"
+  timestamp: "2019-11-13"
+  logo: "relianx.png"
+  discount: ""
+  tags: "Webhost, Webhosting, Web host, Web hosting, Email host, Email hosting"
 ...
