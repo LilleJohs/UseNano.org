@@ -1009,4 +1009,22 @@
   logo: "relianx.png"
   discount: ""
   tags: "Webhost, Webhosting, Web host, Web hosting, Email host, Email hosting"
+-
+  websitelink: "https://www.cueyall.com/"
+  category: "BBQ Food Truck"
+  name: "And Also With ‘Cue"
+  country: "USA"
+  timestamp: "2019-11-27"
+  logo: "none.png"
+  discount: "Free Soda or Bottled Water for Nano payment"
+  tags: "BBQ Food Truck Raleigh"
+-
+  websitelink: "https://ecstaticstore.com/"
+  category: "Jewelry"
+  name: "Ecstatic Streetwear Jewelry"
+  country: "Worldwide"
+  timestamp: "2019-11-28"
+  logo: "none.png"
+  discount: ""
+  tags: "Streetwear Jewelry"
 ...
