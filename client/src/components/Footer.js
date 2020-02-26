@@ -9,11 +9,7 @@ class Footer extends Component {
           <h2 className="checkOutLinks">
             <a target="_blank" rel="noopener noreferrer" className="link" href="https://brainblocks.io/">
               brainblocks
-            </a>, <a target="_blank" rel="noopener noreferrer" className="link" href="https://nanocashier.com/">
-              NanoCashier
-            </a> and <a target="_blank" rel="noopener noreferrer" className="link" href="https://kitepay.io/">
-              KitePay
-            </a>
+            </a>.
           </h2>
           <h4 style={{margin: '30px 0px 30px 0px'}}>
             Disclaimer: This site does not endorse nor confirm the legitimacy of the stores listed. We try our best to make
