@@ -38,15 +38,6 @@
   discount: ""
   tags: ""
 -
-  websitelink: "https://late-apex-racing.com/pages/home-tracks"
-  category: "Motorsport Apparel"
-  name: "Late Apex"
-  country: "Worldwide"
-  timestamp: "2018-01-31"
-  logo: "lateapex.png"
-  discount: ""
-  tags: ""
--
   websitelink: "https://www.headphones.com/"
   category: "Headphones"
   name: "Headphones.com"
@@ -461,15 +452,6 @@
   discount: ""
   tags: ""
 -
-  websitelink: "https://kaizen-sports.de/"
-  category: "Sport Socks"
-  name: "Kaizen Sports"
-  country: "German, ships worldwide"
-  timestamp: "2018-03-03"
-  logo: "kaizen.png"
-  discount: ""
-  tags: ""
--
   websitelink: "http://iinde.com/"
   category: "Marketing & Design Agency"
   name: "IINDE DESIGN COMPANY"
@@ -513,15 +495,6 @@
   timestamp: "2018-03-06"
   logo: "nanothings.png"
   discount: "10% discount"
-  tags: ""
--
-  websitelink: "https://blackblockresearch.com/"
-  category: "Crypto Research & Analysis"
-  name: "Black Block Research"
-  country: "Worldwide"
-  timestamp: "2018-03-06"
-  logo: "none.png"
-  discount: ""
   tags: ""
 -
   websitelink: "https://www.cutalltheshit.com/"
@@ -685,15 +658,6 @@
   logo: "excellentbeautie.png"
   discount: ""
   tags: "collagen, vitamin, sữa ong chúa"
--
-  websitelink: "https://anchor-x.io"
-  category: "Buy From Any Online Retailer"
-  name: "AnchorX"
-  country: "Worldwide"
-  timestamp: "2018-08-21"
-  logo: "bitcoinsuper.png"
-  discount: ""
-  tags: ""
 -
   websitelink: "https://nanotwit.ch"
   category: "Twitch Donations"
