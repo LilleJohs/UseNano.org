@@ -19,7 +19,7 @@ class Footer extends Component {
         <div className="footer py-1 text-center">
           <p>Contact us on <a href="mailto:spendnano@gmail.com">spendnano@gmail.com</a>. See any mistakes or outdated information? Send me an e-mail or make a pull request on <a href="https://github.com/LilleJohs/UseNano.org">Github</a></p>
 
-          <p>Copyright © Use Nano 2018</p>
+          <p>Copyright © Use Nano 2020</p>
         </div>
       </footer>
     );
