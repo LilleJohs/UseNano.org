@@ -36,7 +36,7 @@ require('./routes/sendForm')(app);
 
 const pDoc = yaml.safeLoad(fs.readFileSync("public/physical.yml", 'utf8'));
 
-const ciSearch = (str, value) => str.toLowerCase().includes(value.toLowerCase());
+const ciSearch = (str, value) => str != null && str.toLowerCase().includes(value.toLowerCase());
 
 let allRecords;
 

@@ -1,5 +1,6 @@
 module.exports = {
     show: {
+        'Name': 'name',
         'Website': 'website',
         'Category': 'category',
         'Tags': 'tags',

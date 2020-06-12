@@ -8,6 +8,7 @@ import Footer from './Footer';
 import Map from './Map';
 import OnlineStore from './OnlineStore';
 import ApproveStore from './ApproveStore';
+import AddStore from './AddStore';
 
 export default class App extends Component {
   render() {
@@ -23,6 +24,8 @@ export default class App extends Component {
             <Route path="/map" component={Map} />
             <Route path="/online" component={OnlineStore} />
             <Route path="/online" component={Footer} />
+            <Route path="/addstore" component={AddStore} />
+            <Route path="/addstore" component={Footer} />
             <Route path="/approveStore" component={ApproveStore} />
           </div>
         </BrowserRouter>
