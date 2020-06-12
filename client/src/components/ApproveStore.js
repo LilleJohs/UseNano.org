@@ -7,24 +7,23 @@ class ApproveStore extends Component {
 
         this.state = {
             loggedIn: false,
-            id: '',
+            userid: '',
             data: {},
             selected: -1
         };
     }
 
     onChange(e) {
-        this.setState({ id: e.target.value });
+        this.setState({ userid: e.target.value });
     }
 
     async onClick() {
         let url;
         if (process.env.NODE_ENV === 'production') {
-            url = 'https://usenano.org/approveStoreAuth?id=';
+            url = `https://usenano.org/approveUserAuth?userid=${this.state.userid}`;
         } else {
-            url = 'http://localhost:5000/approveStoreAuth?id=';
+            url = `http://localhost:5000/approveUserAuth?userid=${this.state.userid}`;
         }
-        url += this.state.id;
         const response = await axios.get(url);
         if (response.status === 200) {
             this.setState({ loggedIn: true, data: response.data });
@@ -36,6 +35,20 @@ class ApproveStore extends Component {
             this.setState({ selected: -1 });
         } else {
             this.setState({ selected: i });
+        }
+    }
+
+    async acceptStore(store, i) {
+        console.log(store);
+
+        let url;
+        if (process.env.NODE_ENV === 'production') {
+            url = `https://usenano.org/approveStoreAuth?userid=${this.state.userid}&storeid=${store._id}`;
+        } else {
+            url = `http://localhost:5000/approveStoreAuth?userid=${this.state.userid}&storeid=${store._id}`;
+        }
+        const response = await axios.get(url);
+        if (response.status === 200) {
         }
     }
 
@@ -52,19 +65,22 @@ class ApproveStore extends Component {
                             {store.name}
                         </h1>
                     </div>
-                    {this.state.selected === i && this.showSelected(store)}
+                    {this.state.selected === i && this.showSelected(store, i)}
                 </div>
             );
         }
         return allStores;
     }
 
-    showSelected(store) {
+    showSelected(store, i) {
         return (
             <div className="card-body">
                 <h4 className="card-title" align="center">
                     {store.website}
                 </h4>
+                <div className="btn-tooltip">
+                    <h4 onClick={this.acceptStore.bind(this, store, i)} className="btn btn-info btn-lg" >Accept</h4>
+                </div>
             </div>
         );
     }
@@ -73,7 +89,7 @@ class ApproveStore extends Component {
         return (
             <div align="center" className="container">
                 <div className="input-group mb-3">
-                    <input onChange={this.onChange.bind(this)} type="text" className="form-control" value={this.state.id} aria-label="Id" aria-describedby="basic-addon2" />
+                    <input onChange={this.onChange.bind(this)} type="text" className="form-control" value={this.state.userid} aria-label="Id" aria-describedby="basic-addon2" />
                     <div className="input-group-append">
                         <button className="btn btn-outline-secondary" type="button" onClick={this.onClick.bind(this)}>Log In</button>
                     </div>

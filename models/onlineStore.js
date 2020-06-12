@@ -22,7 +22,7 @@ const onlineStoreUnapprovedSchema = new Schema({
     name: { type: String, required: true },
     website: { type: String, required: true },
     category: { type: String, required: true },
-    oldId: { type: String, required: true },
+    oldId: String,
     tags: String,
     dateLastUpdated: Date,
     discount: String,

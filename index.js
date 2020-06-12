@@ -40,13 +40,17 @@ const ciSearch = (str, value) => str.toLowerCase().includes(value.toLowerCase())
 
 let allRecords;
 
-const OnlineStore = mongoose.model('OnlineStore');
+setInterval(getLatest, 10*1000); 
+function getLatest(){
+  const OnlineStore = mongoose.model('OnlineStore');
 
-OnlineStore.find({}, function (err, docs) {
-  if (!err) {
-    allRecords = docs;
-  } else { throw err; }
-});
+  OnlineStore.find({}, function (err, docs) {
+    if (!err) {
+      allRecords = docs;
+    } else { throw err; }
+  });
+  console.log((new Date()).getSeconds());
+};
 
 app.get('/db', async (req, res) => {
   //Send physical store data for front page

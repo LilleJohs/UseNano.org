@@ -21,7 +21,7 @@ class Information extends Component {
             <h4>Are we missing a store? Please fill out the form below.</h4>
           </div>
           <div className="btn-tooltip">
-            <a className="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/10Zka3DJ_neNUgU40ofNpTWgwO3ZyPKJlM9WA9IMIgAw">Submit a new merchant</a>
+            <a className="btn btn-info btn-lg" href="/online">Submit a new merchant</a>
           </div>
         </div>
       </div>
