@@ -16,17 +16,17 @@ export default class App extends Component {
       <div>
         <BrowserRouter>
           <div>
-            <Route path="/" component={Header} />
-            <Route exact path="/" component={Information} />
-            <Route exact path="/" component={SearchBar} />
-            <Route exact path="/" component={List} />
-            <Route exact path="/" component={Footer} />
-            <Route path="/map" component={Map} />
-            <Route path="/online" component={OnlineStore} />
-            <Route path="/online" component={Footer} />
-            <Route path="/addstore" component={AddStore} />
-            <Route path="/addstore" component={Footer} />
-            <Route path="/approveStore" component={ApproveStore} />
+            <Route path='/' component={Header} />
+            <Route exact path='/' component={Information} />
+            <Route exact path='/' component={SearchBar} />
+            <Route exact path='/' component={List} />
+            <Route exact path='/' component={Footer} />
+            <Route path='/map' component={Map} />
+            <Route path='/online' component={OnlineStore} />
+            <Route path='/online' component={Footer} />
+            <Route path='/addstore' component={AddStore} />
+            <Route path='/addstore' component={Footer} />
+            <Route path='/approveStore' component={ApproveStore} />
           </div>
         </BrowserRouter>
       </div>
