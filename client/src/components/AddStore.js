@@ -145,7 +145,7 @@ export default class AddStore extends Component {
           <div className='whatisnano'>
             <h1>Add all the details in the form below</h1>
           </div>
-          <img src={this.state.logo} />
+          <img alt={'logo'} src={this.state.logo} />
           <div className='button'>
             <label htmlFor='single'>
               <h4 className='btn btn-info btn-lg'>Upload Image</h4>

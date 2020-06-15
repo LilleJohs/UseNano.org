@@ -1,4 +1,7 @@
 export default function(search, newCorrectOrder, sort) {
+  if (typeof search.concat().sort == "undefined") { 
+    return;
+  }
   var newSearch = search.concat().sort(function(a, b){
     var keyA, keyB;
     switch(sort){

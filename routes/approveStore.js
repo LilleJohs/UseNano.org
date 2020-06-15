@@ -44,6 +44,7 @@ module.exports = app => {
                         address: doc.address,
                         contactEmail: doc.contactEmail,
                         miscellaneousNotes: doc.miscellaneousNotes,
+                        img: doc.img
                     });
 
                     newApprovedStore.save(function (err, newApprovedStore) {

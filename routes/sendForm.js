@@ -27,10 +27,8 @@ module.exports = (app) => {
         var encode_image = img.toString('base64');
         var finalImg = {
             contentType: req.file.mimetype,
-            image:  new Buffer(encode_image, 'base64')
+            data:  new Buffer(encode_image, 'base64')
          };
-        console.log(img)
-        console.log(encode_image)
     }
     
 
@@ -50,10 +48,10 @@ module.exports = (app) => {
         miscellaneousNotes: reqBody.miscellaneousNotes,
         img: req.file != null ? finalImg : null
       });
-      //newStore.save(function (err, store) {
-      //    if (err) return console.error(err);
-      //    console.log('Success');
-      //});
+      newStore.save(function (err, store) {
+          if (err) return console.error(err);
+          console.log('Success');
+      });
       res.status(200).send('Ok');
     } else {
       res.status(401).send('Captcha not correct');
