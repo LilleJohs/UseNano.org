@@ -129,4 +129,12 @@
   timestamp: "2019-08-18"
   website: "https://www.facebook.com/preferredhomepaintingllc/"
   discount: "10% discount"
+-
+  name: "Centroinfissi EGI"
+  category: "Windows and Doors Shop"
+  lat: 44.439590
+  lng: 8.968570
+  timestamp: "2020-02-08"
+  website: "https://centroinfissigenova.it/"
+  discount: ""
 ...
