@@ -7,7 +7,7 @@ class Header extends Component {
   }
 
   returnButton() {
-    if (this.props.location.pathname !== "/map"){
+    if (this.props.path !== "/map"){
       return (
         <a href="/map" className="nav-link">
           <button type="button" className="btn btn-primary btn-lg">Map</button>

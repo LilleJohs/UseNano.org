@@ -97,6 +97,9 @@ tr img {
 .moreInfo {
    background-color: #ffffff;
 }
+.captcha {
+  margin: 10px 0px 10px
+}
 
 .logo-link {
   padding: 1rem;

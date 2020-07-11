@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import Header from "../components/Header";
+
 class ApproveStore extends Component {
   constructor(props) {
     super(props);
@@ -117,27 +119,30 @@ class ApproveStore extends Component {
 
   render() {
     return (
-      <div align='center' className='container'>
-        <div className='input-group mb-3'>
-          <input
-            onChange={this.onChange.bind(this)}
-            type='text'
-            className='form-control'
-            value={this.state.userid}
-            aria-label='Id'
-            aria-describedby='basic-addon2'
-          />
-          <div className='input-group-append'>
-            <button
-              className='btn btn-outline-secondary'
-              type='button'
-              onClick={this.onClick.bind(this)}
-            >
-              Log In
-            </button>
+      <div>
+        <Header/>
+        <div align='center' className='container'>
+          <div className='input-group mb-3'>
+            <input
+              onChange={this.onChange.bind(this)}
+              type='text'
+              className='form-control'
+              value={this.state.userid}
+              aria-label='Id'
+              aria-describedby='basic-addon2'
+            />
+            <div className='input-group-append'>
+              <button
+                className='btn btn-outline-secondary'
+                type='button'
+                onClick={this.onClick.bind(this)}
+              >
+                Log In
+              </button>
+            </div>
           </div>
+          <div>{this.showUnapprovedStores()}</div>
         </div>
-        <div>{this.showUnapprovedStores()}</div>
       </div>
     );
   }

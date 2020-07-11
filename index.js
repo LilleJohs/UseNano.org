@@ -8,6 +8,7 @@ const helmet = require('helmet');
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
 require('./models/onlineStore');
+require('./models/physicalStore');
 
 mongoose.connect(keys.mongodbURI, {
   useNewUrlParser: true,

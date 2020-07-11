@@ -3,3 +3,4 @@ apiKeys
 .idea
 .DS_Store
 dev.js
+.prettierrc

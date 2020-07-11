@@ -18,4 +18,21 @@ const physicalStoreSchema = new Schema({
         { data: Buffer, contentType: String },
 });
 
-mongoose.model('physicalStore', physicalStoreSchema);
+const physicalStoreUnapprovedSchema = new Schema({
+    name: { type: String, required: true },
+    lat: { type: Number, required: true },
+    long: { type: Number, required: true },
+    website: String,
+    category: { type: String, required: true },
+    oldId: String,
+    tags: String,
+    dateLastUpdated: Date,
+    discount: String,
+    contactEmail: String,
+    miscellaneousNotes: String,
+    img:
+        { data: Buffer, contentType: String },
+});
+
+mongoose.model('PhysicalStore', physicalStoreSchema, 'physicalstores');
+mongoose.model('PhysicalStoreUnapproved', physicalStoreUnapprovedSchema, 'physicalstores_unapproved');
