@@ -1,64 +1,62 @@
-import React, { Component, Fragment } from 'react';
+import React from "react";
 
-import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Grid from '@material-ui/core/Grid';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+import AppBar from "@material-ui/core/AppBar";
+import Button from "@material-ui/core/Button";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
 
-class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.returnButton = this.returnButton.bind(this);
-  }
+const useStyles = makeStyles((theme) => ({
+  title: {
+    marginRight: theme.spacing(4),
+  },
+  button: {
+    padding: theme.spacing(0, 4),
+    fontSize: 16,
+  },
+}));
 
-  returnButton() {
-    if (this.props.path !== "/map"){
-      return (
-        <a href="/map" className="nav-link">
-          <button type="button" className="btn btn-primary btn-lg">Map</button>
-        </a>
-      );
-    } else {
-      return (
-        <a href="/" className="nav-link">
-          <button type="button" className="btn btn-primary btn-lg">Online</button>
-        </a>
-      );
-    }
-  }
+export default function Header() {
+  const classes = useStyles();
 
-  render() {
-    return(
-      <Fragment>
-      <CssBaseline />
-      <AppBar position="relative">
-        <Toolbar>
-          <Typography variant="h6" color="inherit" noWrap>
-            UseNano.org
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      </Fragment>
-      /*<nav className="nav navbar navbar-default navbar-fixed-top">
-        <div className="container-fluid">
-          <span className="navbar-item navbar-left">
-            <a href="/">
-          	 <img alt="" src="usenanologo.png"/>
-            </a>
-          </span>
-          <span className="nav-item navbar-right">
-            {this.returnButton()}
-          </span>
-        </div>
-      </nav>*/
-    );
-  }
+  return (
+    <AppBar color="primary" position="relative">
+      <Toolbar>
+        <Typography
+          className={classes.title}
+          variant="h4"
+          color="secondary"
+          noWrap
+        >
+          UseNano.org
+        </Typography>
+        <Button
+          className={classes.button}
+          size="large"
+          href="/"
+          color="secondary"
+        >
+          Online Merchants
+        </Button>
+        <Button
+          className={classes.button}
+          size="large"
+          href="/map"
+          color="secondary"
+        >
+          Brick-and-mortar
+        </Button>
+
+        <Button
+          className={classes.button}
+          size="large"
+          href="/addstore"
+          color="secondary"
+          variant="outlined"
+        >
+          + Suggest New Merchant
+        </Button>
+      </Toolbar>
+    </AppBar>
+  );
 }
-
-export default Header;

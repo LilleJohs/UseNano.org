@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { doSort } from '../actions/index';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import { doSort } from "../actions/index";
 
 class List extends Component {
   constructor(props) {
@@ -9,7 +9,7 @@ class List extends Component {
 
     this.state = {
       page: 1,
-      selected: '',
+      selected: "",
     };
 
     this.sort = this.sort.bind(this);
@@ -25,19 +25,19 @@ class List extends Component {
   newPage(i) {
     this.setState({
       page: this.state.page + i,
-      selected: '',
+      selected: "",
     });
   }
 
   renderBackButton() {
     if (this.state.page >= 2) {
       return (
-        <span className='leftButton'>
+        <span className="leftButton">
           <h4
             onClick={() => {
               this.newPage(-1);
             }}
-            className='pageButton'
+            className="pageButton"
           >
             &#8249;
           </h4>
@@ -49,7 +49,7 @@ class List extends Component {
   renderPageNumber() {
     if (this.props.search != null && this.props.search.length > 50) {
       return (
-        <span className='pageNumber'>
+        <span className="pageNumber">
           Page {this.state.page} / {Math.ceil(this.props.search.length / 50)}
         </span>
       );
@@ -57,14 +57,17 @@ class List extends Component {
   }
 
   renderForwardButton() {
-    if (this.props.search != null && this.state.page < Math.ceil(this.props.search.length / 50)) {
+    if (
+      this.props.search != null &&
+      this.state.page < Math.ceil(this.props.search.length / 50)
+    ) {
       return (
-        <span className='rightButton'>
+        <span className="rightButton">
           <h4
             onClick={() => {
               this.newPage(1);
             }}
-            className='pageButton'
+            className="pageButton"
           >
             &#8250;
           </h4>
@@ -77,22 +80,22 @@ class List extends Component {
     // Renders more information about each store if you click on a store
     return (
       <tr key={data.name}>
-        <td className='moreInfo' colSpan='4'>
-          <div style={{ margin: '20px 0px 20px 0px' }}>
+        <td className="moreInfo" colSpan="4">
+          <div style={{ margin: "20px 0px 20px 0px" }}>
             <p>Service avaliable in or ships to: {data.country}</p>
             <p>
-              Added:{' '}
-              {new Intl.DateTimeFormat('en-GB', {
-                year: 'numeric',
-                month: 'long',
-                day: '2-digit',
+              Added:{" "}
+              {new Intl.DateTimeFormat("en-GB", {
+                year: "numeric",
+                month: "long",
+                day: "2-digit",
               }).format(new Date(data.dateLastUpdated))}
             </p>
             <p
-              onClick={() => this.props.history.push('/online', { data: data })}
-              className='nav-link'
+              onClick={() => this.props.history.push("/online", { data: data })}
+              className="nav-link"
             >
-              <button type='button' className='btn btn-primary btn-lg'>
+              <button type="button" className="btn btn-primary btn-lg">
                 Learn More!
               </button>
             </p>
@@ -116,7 +119,7 @@ class List extends Component {
   }
 
   arrayBufferToBase64(buffer) {
-    var binary = '';
+    var binary = "";
     var bytes = [].slice.call(new Uint8Array(buffer));
     bytes.forEach((b) => (binary += String.fromCharCode(b)));
     return window.btoa(binary);
@@ -134,39 +137,37 @@ class List extends Component {
             img.contentType
           };base64,${this.arrayBufferToBase64(img.data.data)}`;
         } else {
-          imageLink = 'logos/none.png';
+          imageLink = "logos/none.png";
         }
-        const imgTag = (
-          <img alt={data.name} className='logo' src={imageLink} />
-        );
+        const imgTag = <img alt={data.name} className="logo" src={imageLink} />;
         let table = [
           <tr
-            style={{ cursor: 'pointer' }}
+            style={{ cursor: "pointer" }}
             key={i}
             onClick={() =>
               this.setState(
                 this.state.selected === data.name
-                  ? { selected: '' }
+                  ? { selected: "" }
                   : { selected: data.name }
               )
             }
           >
             <td>
               <a
-                className='logo-link'
-                target='_blank'
-                rel='noopener noreferrer'
+                className="logo-link"
+                target="_blank"
+                rel="noopener noreferrer"
                 href={data.website}
                 alt={data.name}
               >
                 {imgTag}
               </a>
-              <span className='company-name'>
-                {' '}
+              <span className="company-name">
+                {" "}
                 <a
-                  className='name'
-                  target='_blank'
-                  rel='noopener noreferrer'
+                  className="name"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href={data.website}
                 >
                   {data.name}
@@ -185,31 +186,31 @@ class List extends Component {
 
   render() {
     return (
-      <div className='container'>
-        <table className='table table-striped table-hover'>
+      <div className="container">
+        <table className="table table-striped table-hover">
           <thead>
             <tr>
               <th
                 onClick={() => {
-                  this.sort('name');
+                  this.sort("name");
                 }}
-                className='merchant'
+                className="merchant"
               >
                 Merchant Name
               </th>
               <th
                 onClick={() => {
-                  this.sort('category');
+                  this.sort("category");
                 }}
-                className='category'
+                className="category"
               >
                 Category
               </th>
               <th
                 onClick={() => {
-                  this.sort('discount');
+                  this.sort("discount");
                 }}
-                className='discount'
+                className="discount"
               >
                 Nano Discount
               </th>
@@ -217,7 +218,7 @@ class List extends Component {
           </thead>
           <tbody>{this.renderEntries()}</tbody>
         </table>
-        <div className='pageButtons'>
+        <div className="pageButtons">
           {this.renderBackButton()}
           {this.renderPageNumber()}
           {this.renderForwardButton()}

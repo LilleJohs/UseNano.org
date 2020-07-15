@@ -4,3 +4,4 @@ apiKeys
 .DS_Store
 dev.js
 .prettierrc
+.vscode
