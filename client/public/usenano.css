@@ -100,6 +100,9 @@ tr img {
 .captcha {
   margin: 10px 0px 10px
 }
+.required {
+  color: red;
+}
 
 .logo-link {
   padding: 1rem;

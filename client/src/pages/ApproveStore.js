@@ -63,6 +63,7 @@ class ApproveStore extends Component {
     }
     let allStores = [];
     for (var i = 0; i < state.data.length; i++) {
+      // This is the list elements of the unapproved stores
       const store = state.data[i];
       allStores.push(
         <div key={store.name} className='card'>
@@ -83,6 +84,7 @@ class ApproveStore extends Component {
   }
 
   arrayBufferToBase64(buffer) {
+    // Png/jpeg to base64
     var binary = '';
     var bytes = [].slice.call(new Uint8Array(buffer));
     bytes.forEach((b) => (binary += String.fromCharCode(b)));

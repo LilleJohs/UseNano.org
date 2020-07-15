@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
-import axios from 'axios';
+import React, { Component } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
+import axios from "axios";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-const keys = require('../infoType');
+const keys = require("../infoType");
 const recaptchaRef = React.createRef();
 
 export default class AddStore extends Component {
@@ -15,39 +15,56 @@ export default class AddStore extends Component {
     this.state = {
       editDataOnline: [],
       editDataPhysical: [],
-      captchaValue: '',
-      typeOfStore: 'empty',
+      captchaValue: "",
+      typeOfStore: "empty",
+      picErrors: [],
     };
+
+    this.inputChange = this.inputChange.bind(this);
   }
 
   componentDidMount() {
     window.scrollTo(0, 0);
   }
 
-  inputChange(key, e) {
-    let newEditState;
-    if (this.state.typeOfStore === 'Online') {
-      newEditState = this.state.editDataOnline;
-      newEditState[key] = e.target.value;
+  inputChange(e) {
+    const state = this.state;
+    const target = e.target;
+    const key = target.name;
+    const value = target.value;
+    if (state.typeOfStore === "Online") {
+      const newEditState = state.editDataOnline;
+      newEditState[key] = value;
       this.setState({ editDataOnline: newEditState });
-    } else if (this.state.typeOfStore === 'Physical') {
-      newEditState = this.state.editDataPhysical;
-      newEditState[key] = e.target.value;
+    } else if (state.typeOfStore === "Physical") {
+      const newEditState = state.editDataPhysical;
+      newEditState[key] = value;
       this.setState({ editDataPhysical: newEditState });
     }
   }
 
-  newItem(dbName, state) {
+  newItem(entry, state) {
+    const dbName = entry.dbEntry;
     const item = (
       <input
-        type='text'
+        type="text"
         name={dbName}
-        value={state[dbName]}
-        onChange={this.inputChange.bind(this, dbName)}
+        value={state[dbName] || ''}
+        onChange={this.inputChange}
       />
     );
 
-    return item;
+    if (entry.required) {
+      const requiredItem = (
+        <span>
+          <p className='required'>Required</p>
+          {item}
+          </span>
+      );
+      return requiredItem;
+    } else {
+      return item;
+    }   
   }
 
   handleSubmission() {
@@ -55,7 +72,7 @@ export default class AddStore extends Component {
     //     return;
     // }
     let url;
-    if (process.env.NODE_ENV === 'production') {
+    if (process.env.NODE_ENV === "production") {
       url = `https://usenano.org/sendform${this.state.typeOfStore.toLowerCase()}`;
     } else {
       url = `http://localhost:5000/sendform${this.state.typeOfStore.toLowerCase()}`;
@@ -66,11 +83,14 @@ export default class AddStore extends Component {
 
     const state = this.state;
     const data = new FormData();
-    const editData = state.editData === 'Online' ? state.editDataOnline : state.editDataPhysical;
+    const editData =
+      state.editData === "Online"
+        ? state.editDataOnline
+        : state.editDataPhysical;
     for (var key in editData) {
       data.append(key, editData[key]);
     }
-    data.append('captcha', state.captchaValue);
+    data.append("captcha", state.captchaValue);
 
     axios.post(url, data);
   }
@@ -82,20 +102,20 @@ export default class AddStore extends Component {
   returnCaptcha() {
     return (
       <div>
-        <div className='captcha' align='center'>
+        <div className="captcha" align="center">
           <ReCAPTCHA
             ref={recaptchaRef}
-            sitekey='6LfZ4MEUAAAAAA17H6aLiok2_cI0Jc2fLyQ92wrN'
+            sitekey="6LfZ4MEUAAAAAA17H6aLiok2_cI0Jc2fLyQ92wrN"
             onChange={this.onChange.bind(this)}
           />
         </div>
         <div>
-          <p align='center' className='nav-link'>
+          <p align="center" className="nav-link">
             <button
-              disabled={this.state.captchaValue === 's'}
-              type='button'
+              disabled={this.state.captchaValue === "s"}
+              type="button"
               onClick={this.handleSubmission.bind(this)}
-              className='btn btn-primary btn-lg'
+              className="btn btn-primary btn-lg"
             >
               Submit
             </button>
@@ -109,16 +129,17 @@ export default class AddStore extends Component {
     const errs = [];
     const file = e.target.files[0];
 
-    const types = ['image/png', 'image/jpeg', 'image/jpg'];
+    const types = ["image/png", "image/jpeg", "image/jpg"];
 
     if (types.every((type) => file.type !== type)) {
       errs.push(`'${file.type}' is not a supported format`);
     }
-    if (file.size > 15000) {
+    if (file.size > 1000) {
       errs.push(`'${file.name}' is too large, please pick a smaller file`);
     }
 
     this.setState((state) => {
+      state.picErrors = errs;
       state.editDataOnline.logo = file;
       state.logo = URL.createObjectURL(file);
       return state;
@@ -126,22 +147,30 @@ export default class AddStore extends Component {
   };
 
   storeForm(returnObject) {
+    const state = this.state;
+    let picErrors = [];
+    for (var showName in state.picErrors) {
+      picErrors.push(<h4>{showName}</h4>);
+    }
     return (
       <div>
-        <div className='whatisnano'>
-          <h1>{this.state.typeOfStore} Store</h1>
+        <div className="whatisnano">
+          <h1>{state.typeOfStore} Store</h1>
           <h2>Add all the details in the form below</h2>
         </div>
-        {this.state.logo != null && <img alt={'logo'} src={this.state.logo} />}
-        <div className='button'>
-          <label htmlFor='single'>
-            <h4 className='btn btn-info btn-lg'>Upload Image</h4>
+        {state.logo != null && <img alt={"logo"} src={state.logo} />}
+        <div>
+          {picErrors}
+        </div>  
+        <div className="button">
+          <label htmlFor="single">
+            <h4 className="btn btn-info btn-lg">Upload Image</h4>
           </label>
           <input
-            type='file'
-            id='single'
+            type="file"
+            id="single"
             onChange={this.onChangePic}
-            style={{ display: 'none' }}
+            style={{ display: "none" }}
           />
         </div>
         {returnObject}
@@ -153,10 +182,10 @@ export default class AddStore extends Component {
   render() {
     let state;
     let storeKeys;
-    if (this.state.typeOfStore === 'Online') {
+    if (this.state.typeOfStore === "Online") {
       state = this.state.editDataOnline;
       storeKeys = keys.showOnline;
-    } else if (this.state.typeOfStore === 'Physical') {
+    } else if (this.state.typeOfStore === "Physical") {
       state = this.state.editDataPhysical;
       storeKeys = keys.showPhysical;
     }
@@ -168,7 +197,7 @@ export default class AddStore extends Component {
           <div key={entry.dbEntry}>
             <h1>{showName}</h1>
             <h4>{entry.info}</h4>
-            {this.newItem(entry.dbEntry, state)}
+            {this.newItem(entry, state)}
           </div>
         );
       }
@@ -176,33 +205,33 @@ export default class AddStore extends Component {
 
     return (
       <div>
-        <Header path='/addstore'/>
-        <div className='card text-black text-center'>
-          <div className='nanorevolution'>
+        <Header path="/addstore" />
+        <div className="card text-black text-center">
+          <div className="nanorevolution">
             <h1>Add A New Store</h1>
           </div>
           <h1>What kind of store do you wanna add?</h1>
           <span>
             <button
-              disabled={this.state.typeOfStore === 'Online'}
-              type='button'
-              onClick={() => this.setState({ typeOfStore: 'Online' })}
-              className='btn btn-primary btn-lg'
+              disabled={this.state.typeOfStore === "Online"}
+              type="button"
+              onClick={() => this.setState({ typeOfStore: "Online" })}
+              className="btn btn-primary btn-lg"
             >
               Online
             </button>
             <button
-              disabled={this.state.typeOfStore === 'Physical'}
-              type='button'
-              onClick={() => this.setState({ typeOfStore: 'Physical' })}
-              className='btn btn-primary btn-lg'
+              disabled={this.state.typeOfStore === "Physical"}
+              type="button"
+              onClick={() => this.setState({ typeOfStore: "Physical" })}
+              className="btn btn-primary btn-lg"
             >
               Physical
             </button>
           </span>
-          {this.state.typeOfStore !== 'empty' && this.storeForm(returnObject)}
+          {this.state.typeOfStore !== "empty" && this.storeForm(returnObject)}
         </div>
-        <Footer/>
+        <Footer />
       </div>
     );
   }

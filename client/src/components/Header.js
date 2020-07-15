@@ -1,4 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+
+import AppBar from '@material-ui/core/AppBar';
+import Button from '@material-ui/core/Button';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Grid from '@material-ui/core/Grid';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 
 class Header extends Component {
   constructor(props) {
@@ -24,7 +35,17 @@ class Header extends Component {
 
   render() {
     return(
-      <nav className="nav navbar navbar-default navbar-fixed-top">
+      <Fragment>
+      <CssBaseline />
+      <AppBar position="relative">
+        <Toolbar>
+          <Typography variant="h6" color="inherit" noWrap>
+            UseNano.org
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      </Fragment>
+      /*<nav className="nav navbar navbar-default navbar-fixed-top">
         <div className="container-fluid">
           <span className="navbar-item navbar-left">
             <a href="/">
@@ -35,7 +56,7 @@ class Header extends Component {
             {this.returnButton()}
           </span>
         </div>
-      </nav>
+      </nav>*/
     );
   }
 }
