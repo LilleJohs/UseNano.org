@@ -1,9 +1,63 @@
-import React, { Component } from 'react';
+import React from "react";
 
-class Footer extends Component {
-  render() {
-    return (
-      <footer className="page-footer bg-light font-small">
+import Container from "@material-ui/core/Container";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "@material-ui/core";
+
+const useStyles = makeStyles((theme) => ({
+  link: {
+    margin: theme.spacing(8, 0, 6),
+  },
+  disclaimer: {
+    margin: theme.spacing(3),
+  },
+  mistakes: {
+    margin: theme.spacing(2),
+  },
+}));
+
+export default function Footer() {
+  const classes = useStyles();
+
+  return (
+    <Container>
+      <Typography variant="h3" align="center">
+        Want to accept NANO on your own website but {"don't"} know how? Check
+        out{" "}
+        <Link
+          rel="noopener"
+          target="_blank"
+          href="https://brainblocks.io/"
+          variant="h3"
+        >
+          brainblocks
+        </Link>
+      </Typography>
+
+      <Typography className={classes.disclaimer} variant="h4" align="center">
+        Disclaimer: This site does not endorse nor confirm the legitimacy of the
+        stores listed. We try our best to make sure the information is correct
+        and up to date, but there may be errors or inconsistencies.
+      </Typography>
+
+      <Typography className={classes.mistakes} variant="h5" align="center">
+        See any mistakes or outdated information? Make a pull request on{" "}
+        <Link
+          rel="noopener"
+          target="_blank"
+          href="https://github.com/LilleJohs/UseNano.org"
+          variant="h5"
+        >
+          Github
+        </Link>
+      </Typography>
+      <Typography variant="h5" align="center">
+        Copyright © UseNano 2020
+      </Typography>
+    </Container>
+  );
+  /*<footer className="page-footer bg-light font-small">
         <div className="checkOut text-center">
           <h3> Want to accept NANO on your own website but {"don't"} know how? Check out</h3>
           <h2 className="checkOutLinks">
@@ -25,9 +79,5 @@ class Footer extends Component {
 
           <p>Copyright © Use Nano 2018</p>
         </div>
-      </footer>
-    );
-  }
+      </footer>*/
 }
-
-export default Footer;

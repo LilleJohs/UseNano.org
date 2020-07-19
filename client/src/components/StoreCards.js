@@ -107,7 +107,7 @@ class StoreCards extends Component {
 
   renderCards() {
     const { classes } = this.props;
-    console.log(this.props.search);
+
     if (this.props.search) {
       return (
         <Grid container spacing={5}>
@@ -124,10 +124,18 @@ class StoreCards extends Component {
                     {store.name}
                   </Typography>
                   <Typography color="">{store.category}</Typography>
+                  <Typography color="">
+                    Added{" "}
+                    {new Intl.DateTimeFormat("en-GB", {
+                      year: "numeric",
+                      month: "long",
+                      day: "2-digit",
+                    }).format(new Date(store.dateAdded))}
+                  </Typography>
                 </CardContent>
                 <CardActions>
                   <Button href={store.website} size="large" color="primary">
-                    View
+                    Go To Website
                   </Button>
                 </CardActions>
               </Card>

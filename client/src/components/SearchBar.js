@@ -32,20 +32,18 @@ class SearchBar extends Component {
     return (
       <div className={classes.content}>
         <Container maxWidth="sm">
-          <form>
-            <TextField
-              fullWidth
-              name="searchbar"
-              value={this.state.term}
-              onChange={this.onInputChange}
-              id="outlined-basic"
-              placeholder="Search for anything (Apparel, Gaming, Sunglasses, ...)"
-              variant="outlined"
-              InputProps={{
-                className: classes.input,
-              }}
-            />
-          </form>
+          <TextField
+            fullWidth
+            name="searchbar"
+            value={this.state.term}
+            onChange={this.onInputChange}
+            id="outlined-basic"
+            placeholder="Search for anything (Apparel, Gaming, Sunglasses, ...)"
+            variant="outlined"
+            InputProps={{
+              className: classes.input,
+            }}
+          />
         </Container>
       </div>
     );

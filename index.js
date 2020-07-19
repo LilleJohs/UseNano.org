@@ -36,21 +36,28 @@ app.use(express.json());
 require("./routes/approveStore")(app);
 require("./routes/sendForm")(app);
 
-const pDoc = yaml.safeLoad(fs.readFileSync("public/physical.yml", "utf8"));
-
 const ciSearch = (str, value) =>
   str != null && str.toLowerCase().includes(value.toLowerCase());
 
-let allRecords;
+let allOnlineStoreRecords;
+let allPhysicalStoreRecords;
 
 setInterval(getLatest, 100 * 1000);
 getLatest();
 function getLatest() {
   const OnlineStore = mongoose.model("OnlineStore");
+  const PhysicalStore = mongoose.model("PhysicalStore");
 
   OnlineStore.find({}, function (err, docs) {
     if (!err) {
-      allRecords = docs;
+      allOnlineStoreRecords = docs;
+    } else {
+      throw err;
+    }
+  });
+  PhysicalStore.find({}, function (err, docs) {
+    if (!err) {
+      allPhysicalStoreRecords = docs;
     } else {
       throw err;
     }
@@ -63,8 +70,8 @@ app.get("/db", async (req, res) => {
     const s = req.query.search;
     res.send(
       !s
-        ? allRecords
-        : allRecords.filter(
+        ? allOnlineStoreRecords
+        : allOnlineStoreRecords.filter(
             (o) =>
               ciSearch(o["name"], s) ||
               ciSearch(o["category"], s) ||
@@ -79,7 +86,7 @@ app.get("/db", async (req, res) => {
 app.get("/mapdb", async (req, res) => {
   //Send map data
   try {
-    res.send(pDoc);
+    res.send(allPhysicalStoreRecords);
   } catch (e) {
     console.log(e);
   }
