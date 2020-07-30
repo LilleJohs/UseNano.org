@@ -13,6 +13,7 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/core/styles";
 
+import OneCard from "./OneCard";
 const useStyles = (theme) => ({
   card: {
     height: "100%",
@@ -98,13 +99,6 @@ class StoreCards extends Component {
     }
   }
 
-  arrayBufferToBase64(buffer) {
-    var binary = "";
-    var bytes = [].slice.call(new Uint8Array(buffer));
-    bytes.forEach((b) => (binary += String.fromCharCode(b)));
-    return window.btoa(binary);
-  }
-
   renderCards() {
     const { classes } = this.props;
 
@@ -113,54 +107,11 @@ class StoreCards extends Component {
         <Grid container spacing={5}>
           {this.props.search.map((store) => (
             <Grid item key={store.name} xs={12} sm={6} md={3}>
-              <Card className={classes.card}>
-                <CardMedia
-                  className={classes.cardMedia}
-                  image={this.renderImage(store)}
-                  title="Image title"
-                />
-                <CardContent className={classes.cardContent}>
-                  <Typography gutterBottom variant="h5" component="h2">
-                    {store.name}
-                  </Typography>
-                  <Typography color="">{store.category}</Typography>
-                  <Typography color="">
-                    Added{" "}
-                    {new Intl.DateTimeFormat("en-GB", {
-                      year: "numeric",
-                      month: "long",
-                      day: "2-digit",
-                    }).format(new Date(store.dateAdded))}
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button href={store.website} size="large" color="primary">
-                    Go To Website
-                  </Button>
-                </CardActions>
-              </Card>
+              <OneCard key={store.name} store={store} />
             </Grid>
           ))}
         </Grid>
       );
-    }
-  }
-
-  renderImage(data) {
-    switch (data.name) {
-      case null:
-        return;
-      default:
-        const img = data.img;
-        let imageLink;
-        if (img != null) {
-          imageLink = `data:${
-            img.contentType
-          };base64,${this.arrayBufferToBase64(img.data.data)}`;
-        } else {
-          imageLink = "logos/none.png";
-        }
-        return imageLink;
     }
   }
 

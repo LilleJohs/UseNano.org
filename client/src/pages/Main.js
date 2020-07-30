@@ -14,7 +14,7 @@ export default class Main extends Component {
         <Information />
         <SearchBar />
         <StoreCards />
-        <Footer />
+        <Footer showAll={true} />
       </div>
     );
   }

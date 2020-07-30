@@ -15,44 +15,62 @@ const useStyles = makeStyles((theme) => ({
   mistakes: {
     margin: theme.spacing(2),
   },
+  footer: {
+    margin: theme.spacing(4),
+  },
 }));
 
-export default function Footer() {
+export default (props) => {
+  const showAll = props.showAll;
   const classes = useStyles();
+
+  let addAll = [];
+  if (showAll) {
+    addAll.push(
+      <Container>
+        <Typography variant="h3" align="center">
+          Want to accept NANO on your own website but {"don't"} know how? Check
+          out{" "}
+          <Link
+            rel="noopener"
+            target="_blank"
+            href="https://brainblocks.io/"
+            variant="h3"
+          >
+            brainblocks
+          </Link>
+        </Typography>
+
+        <Typography className={classes.disclaimer} variant="h4" align="center">
+          Disclaimer: This site does not endorse nor confirm the legitimacy of
+          the stores listed. We try our best to make sure the information is
+          correct and up to date, but there may be errors or inconsistencies.
+        </Typography>
+
+        <Typography className={classes.mistakes} variant="h5" align="center">
+          See any mistakes or outdated information? Make a pull request on{" "}
+          <Link
+            rel="noopener"
+            target="_blank"
+            href="https://github.com/LilleJohs/UseNano.org"
+            variant="h5"
+          >
+            Github
+          </Link>
+        </Typography>
+      </Container>
+    );
+  }
 
   return (
     <Container>
-      <Typography variant="h3" align="center">
-        Want to accept NANO on your own website but {"don't"} know how? Check
-        out{" "}
-        <Link
-          rel="noopener"
-          target="_blank"
-          href="https://brainblocks.io/"
-          variant="h3"
-        >
-          brainblocks
-        </Link>
-      </Typography>
-
-      <Typography className={classes.disclaimer} variant="h4" align="center">
-        Disclaimer: This site does not endorse nor confirm the legitimacy of the
-        stores listed. We try our best to make sure the information is correct
-        and up to date, but there may be errors or inconsistencies.
-      </Typography>
-
-      <Typography className={classes.mistakes} variant="h5" align="center">
-        See any mistakes or outdated information? Make a pull request on{" "}
-        <Link
-          rel="noopener"
-          target="_blank"
-          href="https://github.com/LilleJohs/UseNano.org"
-          variant="h5"
-        >
-          Github
-        </Link>
-      </Typography>
-      <Typography variant="h5" align="center">
+      {addAll}
+      <Typography
+        className={classes.footer}
+        variant="h5"
+        color="textSecondary"
+        align="center"
+      >
         Copyright © UseNano 2020
       </Typography>
     </Container>
@@ -80,4 +98,4 @@ export default function Footer() {
           <p>Copyright © Use Nano 2018</p>
         </div>
       </footer>*/
-}
+};

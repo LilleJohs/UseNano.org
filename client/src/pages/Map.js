@@ -9,23 +9,26 @@ import Typography from "@material-ui/core/Typography";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/core/styles";
 
 import styled from "styled-components";
 
 const useStyles = (theme) => ({
   card: {
-    width: "10%",
-    zIndex: 2,
+    backgroundColor: theme.palette.secondary.main,
+    color: theme.palette.textPrimary.main,
   },
-  cardMedia: {
-    paddingTop: "56.25%", // 16:9
+  header: {
+    align: "center",
+    margin: theme.spacing(0, 2),
   },
-  cardContent: {
-    flexGrow: 1,
+  type: { margin: theme.spacing(2, 0) },
+  action: {
+    textAlign: "center",
+    backgroundColor: theme.palette.primary.main,
+  },
+  directions: {
+    textColor: theme.palette.textPrimary.main,
   },
 });
 
@@ -40,27 +43,38 @@ class MapContainer extends Component {
   }
 
   renderInformation(store) {
-    console.log("rendering");
-    console.log(store);
     const { classes } = this.props;
 
     return (
       <Card className={classes.card}>
-        <CardMedia
-          className={classes.cardMedia}
-          image="https://gfx.nrk.no/9FvBsqRQ_CJ52et5U8RV9A8meOzDg8ULDklDI0OvTiCw.jpg"
-          title="Image title"
-        />
-        <CardContent className={classes.cardContent}>
-          <Typography gutterBottom variant="h5" component="h2">
+        <CardContent>
+          <Typography className={classes.header} variant="h5">
             {store.name}
           </Typography>
-          <Typography>{store.category}</Typography>
-          <Typography>{store.dateAdded}</Typography>
+
+          <Typography className={classes.type} variant="h5">
+            Address
+          </Typography>
+          <Typography variant="h6">Hornton Street</Typography>
+
+          <Button href={store.website}>Go To Website</Button>
+          <Typography className={classes.type} variant="h5">
+            Added:{" "}
+            {new Intl.DateTimeFormat("en-GB", {
+              year: "numeric",
+              month: "long",
+              day: "2-digit",
+            }).format(new Date(store.dateAdded))}
+          </Typography>
         </CardContent>
-        <CardActions>
-          <Button href={store.website} size="large" color="primary">
-            Go To Website
+        <CardActions className={classes.action}>
+          <Button
+            color="secondary"
+            variant="contained"
+            className={classes.directions}
+            href={store.website}
+          >
+            Get Directions {">"}
           </Button>
         </CardActions>
       </Card>
@@ -105,13 +119,11 @@ class MapContainer extends Component {
         color: #4a90e2;
       }
     `;
-    //<StyledPop>{this.renderInformation(store)}</StyledPop>
+
     return (
-      <Marker
-        onClick={() => this.setState({ activeMarker: store })}
-        key={i}
-        position={{ lat: store.lat, lng: store.long }}
-      ></Marker>
+      <Marker key={i} position={{ lat: store.lat, lng: store.long }}>
+        <StyledPop>{this.renderInformation(store)}</StyledPop>
+      </Marker>
     );
   }
 
