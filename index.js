@@ -7,14 +7,6 @@ const helmet = require('helmet');
 
 const app = express();
 
-function httpsRedirect(req, res, next) {
-  // Redirect to https
-  if(req.headers["x-forwarded-proto"] === "https"){
-    return next();
-  };
-  res.redirect(301, 'https://' + req.hostname + req.url);
-}
-
 app.set('trust proxy', true);
 
 app.use(cors());
@@ -46,7 +38,6 @@ app.get('/mapdb', async (req, res) => {
 });
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(httpsRedirect);
   app.use(express.static('client/build'));
 
   app.get('*', (req, res) => {
