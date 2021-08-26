@@ -5,12 +5,6 @@ class Footer extends Component {
     return (
       <footer className="page-footer bg-light font-small">
         <div className="checkOut text-center">
-          <h3> Want to accept NANO on your own website but {"don't"} know how? Check out</h3>
-          <h2 className="checkOutLinks">
-            <a target="_blank" rel="noopener noreferrer" className="link" href="https://brainblocks.io/">
-              brainblocks
-            </a>.
-          </h2>
           <h4 style={{margin: '30px 0px 30px 0px'}}>
             Disclaimer: This site does not endorse nor confirm the legitimacy of the stores listed. We try our best to make
             sure the information is correct and up to date, but there may be errors or inconsistencies.
